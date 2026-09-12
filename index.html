@@ -1,0 +1,1871 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="AURA offers elegant, minimal fashion at considered mid-market prices, browser-based virtual try-on and 55-inch AR Smart Mirrors.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="AURA — Fashion, fitted to reality">
+  <meta property="og:description" content="Try elegant, minimal fashion in your browser or bring AURA's AR Smart Mirror to your store.">
+  <meta property="og:type" content="website">
+  <title>AURA — Fashion, fitted to reality</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23f8f9fa'/%3E%3Ccircle cx='32' cy='32' r='24' fill='none' stroke='%23050505' stroke-width='2'/%3E%3Cpath d='M19 45 30.5 19h3L45 45h-5l-2.8-7H26.8L24 45zm10-11h6l-3-8z' fill='%23050505'/%3E%3C/svg%3E">
+  <style>
+    :root{--white:#fff;--mist:#f8f9fa;--ink:#212529;--black:#050505;--blue:#0055ff;--silver:#dde2e7;--muted:#66707a;--line:#dfe3e7;--success:#087f5b;--serif:"DM Serif Display",Georgia,serif;--sans:Inter,Arial,sans-serif;--max:1480px;--ease:cubic-bezier(.22,1,.36,1)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--white);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}body.lock{overflow:hidden}img{display:block;max-width:100%}button,input,select,textarea{font:inherit}button,a{color:inherit}button{cursor:pointer}.serif{font-family:var(--serif)}
+    a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #8eb2ff;outline-offset:3px}.skip{position:fixed;left:1rem;top:-5rem;z-index:500;background:var(--black);color:white;padding:.8rem 1rem}.skip:focus{top:1rem}.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .announcement{height:32px;background:var(--black);color:white;display:flex;align-items:center;justify-content:center;font-size:.75rem;letter-spacing:.09em;text-transform:uppercase}.site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav{height:76px;max-width:var(--max);margin:auto;padding:0 2rem;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:1.5rem}.logo{display:inline-flex;align-items:center;gap:.7rem;text-decoration:none;font-weight:700;letter-spacing:.18em;width:max-content}.logo-mark{width:30px;height:30px;background:var(--blue);color:white;display:grid;place-items:center;font-family:var(--serif);font-size:1.15rem;letter-spacing:0}.main-nav,.utility,.enterprise-nav{display:flex;align-items:center;gap:1.8rem}.main-nav a,.enterprise-nav a,.text-link{font-size:.83rem;text-decoration:none;font-weight:600}.main-nav a{position:relative}.main-nav a:after{content:"";position:absolute;left:0;right:100%;bottom:-8px;height:2px;background:var(--black);transition:right .25s}.main-nav a:hover:after{right:0}.utility{justify-self:end;gap:.9rem}.icon-btn{border:0;background:transparent;min-width:44px;min-height:44px;padding:.5rem;display:grid;place-items:center}.icon-btn svg{width:21px;height:21px}.enterprise-pill{border:1px solid var(--blue);color:var(--blue);padding:.66rem .85rem;text-decoration:none;font-size:.74rem;font-weight:700;letter-spacing:.02em;white-space:nowrap}.enterprise-pill:hover{background:var(--blue);color:white}.enterprise-nav{display:none}.enterprise-mode .main-nav{display:none}.enterprise-mode .enterprise-nav{display:flex}.enterprise-mode .enterprise-pill{background:var(--blue);color:white}.menu-btn{display:none}.cart-count{background:var(--blue);color:white;border-radius:999px;min-width:18px;height:18px;padding:0 4px;display:inline-grid;place-items:center;font-size:.65rem;position:absolute;transform:translate(8px,-10px)}
+    .page{display:none}.page.active{display:block;animation:pageIn .45s var(--ease)}@keyframes pageIn{from{opacity:.35;transform:translateY(8px)}to{opacity:1;transform:none}}.shell{max-width:var(--max);margin:auto;padding:0 2rem}.eyebrow{text-transform:uppercase;font-size:.72rem;letter-spacing:.18em;font-weight:700}.eyebrow.blue{color:var(--blue)}.display{font-family:var(--serif);font-weight:400;line-height:.98;letter-spacing:-.025em}.section-head{display:flex;justify-content:space-between;gap:2rem;align-items:end;margin-bottom:2.8rem}.section-head h2{font-size:clamp(2.3rem,4vw,4.8rem);margin:.5rem 0 0}.section-head p{max-width:33rem;color:var(--muted);margin:0}.section{padding:7rem 0}.mist{background:var(--mist)}.black{background:var(--black);color:white}.blue-bg{background:var(--blue);color:white}.btn{min-height:50px;padding:0 1.35rem;border:1px solid var(--black);display:inline-flex;align-items:center;justify-content:center;gap:.65rem;text-decoration:none;font-size:.78rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;transition:transform .2s,background .2s,color .2s,border .2s}.btn:hover{transform:translateY(-2px)}.btn-tech{background:var(--blue);border-color:var(--blue);color:white}.btn-shop{background:var(--black);color:white}.btn-light{border-color:white;background:white;color:var(--black)}.btn-outline{background:transparent}.btn-outline:hover{background:var(--black);color:white}.btn-small{min-height:40px;padding:0 .9rem;font-size:.7rem}.arrow{font-size:1.2em}.link-arrow{font-weight:700;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:.25rem;font-size:.82rem}.status{display:inline-flex;align-items:center;gap:.45rem;font-size:.76rem;font-weight:700}.dot{width:7px;height:7px;border-radius:50%;background:var(--success)}
+    .hero{min-height:calc(100vh - 108px);display:grid;grid-template-columns:1.24fr .76fr;position:relative;overflow:hidden;background:var(--mist)}.hero-primary,.hero-secondary{position:relative;min-height:710px}.hero-primary img,.hero-secondary>img{width:100%;height:100%;object-fit:cover}.hero-primary:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.18),transparent 60%)}.hero-secondary:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,85,255,.04),rgba(0,85,255,.22));mix-blend-mode:multiply}.hero-copy{position:absolute;z-index:3;left:clamp(1.5rem,6vw,7rem);top:50%;transform:translateY(-50%);width:min(700px,54vw);color:white}.hero-copy h1{font-size:clamp(4rem,7.6vw,8.8rem);margin:.5rem 0 1.3rem;text-shadow:0 2px 22px rgba(0,0,0,.18)}.hero-copy p{max-width:35rem;font-size:1.08rem}.hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}.hero-index{position:absolute;left:1.5rem;bottom:1.5rem;color:white;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;z-index:3;writing-mode:vertical-rl}.phone{position:absolute;z-index:3;width:min(275px,70%);aspect-ratio:9/18;left:50%;top:50%;transform:translate(-50%,-50%) rotate(2deg);border:8px solid var(--black);border-radius:38px;background:#111;box-shadow:0 32px 80px rgba(0,0,0,.35);overflow:hidden}.phone img{width:100%;height:100%;object-fit:cover}.phone:before{content:"";position:absolute;top:7px;left:50%;transform:translateX(-50%);width:36%;height:18px;border-radius:99px;background:var(--black);z-index:2}.phone-ui{position:absolute;inset:0;padding:2rem .85rem .8rem;display:flex;flex-direction:column;justify-content:space-between;color:white;background:linear-gradient(transparent 48%,rgba(0,0,0,.72))}.scan{align-self:flex-end;background:var(--blue);padding:.35rem .55rem;font-size:.62rem;font-weight:700;letter-spacing:.12em}.body-frame{position:absolute;inset:18% 17% 24%;border:1px solid rgba(255,255,255,.8);border-radius:48% 48% 30% 30%}.phone-card{background:rgba(255,255,255,.92);color:var(--ink);padding:.8rem;display:grid;grid-template-columns:1fr auto;gap:.35rem;font-size:.7rem}.phone-card strong{font-size:.78rem}.phone-card button{grid-row:1/3;grid-column:2;border:0;background:var(--blue);color:white;padding:.4rem .6rem;font-weight:700}.hero-label{position:absolute;right:1.2rem;top:1.5rem;z-index:3;background:white;padding:.65rem .8rem;font-size:.68rem;font-weight:700;letter-spacing:.13em}
+    .value-strip{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line)}.value-item{padding:1.5rem 2rem;border-right:1px solid var(--line);display:flex;align-items:flex-start;gap:1rem}.value-item:last-child{border:0}.value-no{color:var(--blue);font-family:var(--serif);font-size:1.5rem;line-height:1}.value-item strong{display:block;font-size:.83rem}.value-item span:last-child{color:var(--muted);font-size:.76rem}
+    .product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}.product-card{position:relative}.product-shot{position:relative;overflow:hidden;background:#e8eaeb;aspect-ratio:3/4}.product-shot img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}.product-card:hover .product-shot img{transform:scale(1.035)}.product-meta{display:grid;grid-template-columns:1fr auto;gap:.25rem;padding:1rem 0}.product-meta h3{font-size:.9rem;margin:0}.product-meta p{font-size:.82rem;color:var(--muted);margin:0}.product-price{grid-column:2;grid-row:1/3;font-weight:600;font-size:.86rem}.try-badge{position:absolute;left:.7rem;bottom:.7rem;background:var(--blue);color:white;border:0;padding:.62rem .75rem;font-size:.68rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;z-index:2}.wish{position:absolute;right:.7rem;top:.7rem;width:40px;height:40px;border:0;background:rgba(255,255,255,.92);z-index:2;font-size:1.1rem}.quick{position:absolute;right:.7rem;bottom:.7rem;background:white;border:0;padding:.62rem .75rem;font-size:.68rem;font-weight:700;opacity:0;transform:translateY(8px);transition:.25s}.product-card:hover .quick,.quick:focus{opacity:1;transform:none}
+    .try-story{display:grid;grid-template-columns:.9fr 1.1fr;min-height:700px}.try-copy{padding:clamp(3rem,7vw,8rem);display:flex;flex-direction:column;justify-content:center}.try-copy h2{font-size:clamp(3.2rem,6vw,7rem);margin:.6rem 0 1.5rem}.steps{margin:2.2rem 0 2.5rem;border-top:1px solid #454545}.step{display:grid;grid-template-columns:42px 1fr;padding:1.15rem 0;border-bottom:1px solid #454545}.step span{color:#7aa2ff;font-family:var(--serif);font-size:1.3rem}.step p{margin:.25rem 0;color:#c7cbd0;font-size:.9rem}.try-visual{position:relative;overflow:hidden}.try-visual img{width:100%;height:100%;object-fit:cover}.try-visual .floating-note{position:absolute;right:2rem;top:2rem;background:white;color:var(--ink);padding:1rem;max-width:220px;font-size:.78rem}.privacy-note{display:flex;gap:.7rem;align-items:flex-start;font-size:.74rem;color:#c7cbd0;margin-top:1.3rem}.privacy-note svg{flex:0 0 auto}
+    .editorial{display:grid;grid-template-columns:1.1fr .9fr;gap:0;align-items:stretch}.editorial-image{min-height:670px}.editorial-image img{width:100%;height:100%;object-fit:cover}.editorial-copy{background:var(--blue);color:white;padding:clamp(3rem,7vw,8rem);display:flex;flex-direction:column;justify-content:center}.editorial-copy h2{font-size:clamp(3rem,6vw,6.7rem);margin:.6rem 0 1.5rem}.editorial-copy p{max-width:34rem}.quote-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}.quote{background:white;padding:2.3rem;min-height:250px;display:flex;flex-direction:column;justify-content:space-between}.quote blockquote{font-family:var(--serif);font-size:1.45rem;line-height:1.25;margin:0}.quote small{color:var(--muted)}.trust-row{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;margin-top:4rem}.trust-card svg{width:28px;height:28px;stroke:var(--blue);margin-bottom:1rem}.trust-card h3{font-size:.9rem}.trust-card p{font-size:.82rem;color:var(--muted)}
+    .social-grid{display:grid;grid-template-columns:1.25fr .75fr .75fr;gap:1rem}.social-tile{position:relative;min-height:460px;overflow:hidden}.social-tile img{width:100%;height:100%;object-fit:cover;transition:transform .7s}.social-tile:hover img{transform:scale(1.04)}.social-tag{position:absolute;bottom:1rem;left:1rem;background:white;padding:.65rem .8rem;font-size:.72rem;font-weight:700}.newsletter{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:end;padding:5rem 0;border-top:1px solid var(--line)}.newsletter h2{font-size:clamp(2.5rem,4vw,5rem);margin:.4rem 0}.newsletter-form{display:flex;border-bottom:2px solid var(--black)}.newsletter-form input{border:0;min-width:0;flex:1;padding:1rem 0;background:transparent}.newsletter-form button{border:0;background:transparent;color:var(--blue);font-weight:700}
+    .enterprise-teaser{display:grid;grid-template-columns:1fr 1fr;min-height:620px}.enterprise-teaser img{width:100%;height:100%;object-fit:cover}.enterprise-teaser>div{padding:clamp(3rem,7vw,8rem);display:flex;flex-direction:column;justify-content:center}.enterprise-teaser h2{font-size:clamp(3rem,5vw,6rem);margin:.7rem 0 1.4rem}.feature-inline{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0 2rem}.feature-inline span{border:1px solid #454545;padding:.5rem .7rem;font-size:.72rem}
+    .page-hero{padding:5rem 0 3rem;border-bottom:1px solid var(--line)}.page-hero h1{font-size:clamp(3.5rem,7vw,8rem);margin:.6rem 0 1rem}.breadcrumb{font-size:.74rem;color:var(--muted);display:flex;gap:.5rem}.breadcrumb a{text-decoration:none}.catalog{display:grid;grid-template-columns:240px 1fr;gap:3rem;padding:3rem 0}.filters{position:sticky;top:130px;align-self:start}.filter-group{border-top:1px solid var(--line);padding:1rem 0}.filter-group h3{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;margin:0 0 .8rem}.check{display:flex;align-items:center;gap:.65rem;font-size:.82rem;margin:.55rem 0}.check input{width:18px;height:18px;accent-color:var(--blue)}.catalog-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;font-size:.8rem}.catalog-top select{border:1px solid var(--line);padding:.7rem;background:white}.filter-toggle{display:none}.seo-copy{max-width:980px;margin:0 auto}.seo-copy h2{font-size:clamp(2.5rem,5vw,5rem);margin-top:0}.seo-copy h3{font-family:var(--serif);font-size:2rem;margin-top:2.5rem}.seo-copy p{color:#41484f;line-height:1.82}.seo-copy .lead{font-family:var(--serif);font-size:1.45rem;color:var(--ink)}
+    .pdp{display:grid;grid-template-columns:1.2fr .8fr;gap:3rem;padding:3rem 0}.gallery{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.gallery img{width:100%;height:100%;object-fit:cover;background:var(--mist)}.gallery .main-shot{grid-column:1/3;aspect-ratio:4/4.2}.gallery .detail-shot{aspect-ratio:3/4}.video-card{grid-column:1/3;aspect-ratio:16/8;position:relative;overflow:hidden;background:#111}.video-card img{width:100%;height:100%;object-fit:cover;opacity:.72}.play{position:absolute;inset:0;margin:auto;width:76px;height:76px;border-radius:50%;border:1px solid white;background:rgba(0,0,0,.25);color:white;font-size:1.4rem}.pdp-panel{position:sticky;top:130px;align-self:start}.pdp-panel h1{font-size:clamp(2.8rem,4.2vw,5rem);margin:.4rem 0 1rem}.rating{display:flex;align-items:center;gap:.7rem;font-size:.8rem}.price{font-size:1.25rem;font-weight:600;margin:1.4rem 0}.swatches{display:flex;gap:.65rem;margin:.8rem 0 1.6rem}.swatch{width:31px;height:31px;border-radius:50%;border:4px solid white;box-shadow:0 0 0 1px var(--line)}.swatch.active{box-shadow:0 0 0 2px var(--black)}.sizes{display:grid;grid-template-columns:repeat(5,1fr);gap:.5rem}.size{border:1px solid var(--line);background:white;min-height:46px}.size.active{background:var(--black);color:white}.size[disabled]{opacity:.35;text-decoration:line-through}.pdp-actions{display:grid;gap:.65rem;margin:1.5rem 0}.pdp-actions .btn{width:100%}.delivery{background:var(--mist);padding:1rem;display:grid;grid-template-columns:auto 1fr;gap:.8rem;font-size:.78rem}.accordion{border-top:1px solid var(--line);margin-top:1.5rem}.accordion details{border-bottom:1px solid var(--line);padding:1.1rem 0}.accordion summary{font-weight:600;font-size:.84rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between}.accordion summary:after{content:"+"}.accordion details[open] summary:after{content:"−"}.accordion p{font-size:.82rem;color:var(--muted)}.detail-sections{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border-block:1px solid var(--line)}.detail-sections article{background:white;padding:3rem}.detail-sections h3{font-family:var(--serif);font-size:2rem;margin:.3rem 0 1rem}.detail-sections p,.detail-sections li{font-size:.86rem;color:var(--muted)}
+    .enterprise-hero{min-height:730px;display:grid;grid-template-columns:.82fr 1.18fr;background:var(--black);color:white}.enterprise-copy{padding:clamp(3rem,6vw,7rem);display:flex;flex-direction:column;justify-content:center}.enterprise-copy h1{font-size:clamp(3.5rem,6vw,7rem);margin:.6rem 0 1.5rem}.enterprise-copy p{max-width:38rem;color:#cbd0d4}.enterprise-visual{position:relative;min-height:730px;overflow:hidden}.enterprise-visual>img{width:100%;height:100%;object-fit:cover;opacity:.86}.mirror-ui{position:absolute;top:8%;bottom:8%;left:30%;width:34%;border:8px solid #111;background:linear-gradient(180deg,rgba(255,255,255,.18),rgba(0,0,0,.32));box-shadow:0 25px 80px rgba(0,0,0,.45);padding:1rem;color:white;display:flex;flex-direction:column;justify-content:space-between}.mirror-ui header{display:flex;justify-content:space-between;font-size:.62rem}.mirror-ui main{text-align:center}.mirror-ui footer{background:white;color:var(--ink);padding:.8rem;font-size:.7rem;display:flex;justify-content:space-between}.enterprise-metric{position:absolute;background:var(--blue);color:white;padding:1rem;right:2rem;bottom:2rem;max-width:220px;font-size:.78rem}.feature-marquee{overflow:hidden;border-block:1px solid #333;padding:1.1rem 0;white-space:nowrap}.feature-marquee span{font-family:var(--serif);font-size:1.8rem;margin-right:3rem}.b2b-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line)}.b2b-feature{background:white;padding:3rem;min-height:310px}.b2b-feature .number{font-family:var(--serif);font-size:3rem;color:var(--blue)}.b2b-feature h3{font-family:var(--serif);font-size:2rem;margin:1rem 0}.journey{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:3rem}.journey-step{border-top:3px solid var(--blue);padding:1.3rem 0}.journey-step strong{display:block;margin:.5rem 0}.journey-step p{font-size:.82rem;color:var(--muted)}.spec-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:5rem;align-items:start}.spec-layout h2{font-size:clamp(3rem,5vw,6rem);margin:0}.spec-table{border-top:1px solid var(--line)}.spec-row{display:grid;grid-template-columns:1fr 1.5fr;padding:1.1rem 0;border-bottom:1px solid var(--line);font-size:.84rem}.spec-row span:first-child{color:var(--muted)}.lead-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:5rem}.lead-layout h2{font-size:clamp(3rem,5vw,6rem);margin:0}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.field{display:flex;flex-direction:column;gap:.4rem}.field.full{grid-column:1/3}.field label{font-size:.74rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em}.field input,.field select,.field textarea{border:1px solid #555;background:#111;color:white;padding:.9rem;min-height:50px}.field textarea{min-height:120px}.form-note{font-size:.72rem;color:#aeb5ba}
+    .content-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem}.content-grid h1{font-size:clamp(3.5rem,6vw,7rem);margin:.5rem 0 1.2rem}.about-visual{position:relative}.about-visual img{width:100%;min-height:620px;object-fit:cover}.about-visual .caption{position:absolute;bottom:1rem;left:1rem;background:white;padding:.8rem;font-size:.72rem}.values{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.value{border-top:2px solid var(--black);padding-top:1rem}.value h3{font-family:var(--serif);font-size:1.7rem}.value p{color:var(--muted);font-size:.84rem}.team{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.person img{aspect-ratio:4/5;width:100%;object-fit:cover;filter:grayscale(1)}.person h3{margin:.8rem 0 .1rem}.person p{margin:0;color:var(--muted);font-size:.8rem}.journal-grid{display:grid;grid-template-columns:1.4fr .8fr .8fr;gap:1.2rem}.article-card{text-decoration:none}.article-card img{width:100%;aspect-ratio:4/3;object-fit:cover}.article-card:first-child img{aspect-ratio:4/3}.article-card h2,.article-card h3{font-family:var(--serif);font-weight:400;margin:.8rem 0}.article-card h2{font-size:2.4rem}.article-card h3{font-size:1.5rem}.article-card small{font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
+    .contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:4rem}.hello-video{position:relative;min-height:540px;background:var(--black);overflow:hidden}.hello-video img{width:100%;height:100%;object-fit:cover;opacity:.72}.hello-video .video-copy{position:absolute;inset:auto 2rem 2rem;color:white}.hello-video h2{font-size:3rem;margin:.2rem 0}.contact-form .field input,.contact-form .field select,.contact-form .field textarea{background:white;color:var(--ink);border-color:var(--line)}.help-layout{display:grid;grid-template-columns:260px 1fr;gap:4rem}.help-nav{position:sticky;top:130px;align-self:start}.help-nav button{display:block;width:100%;text-align:left;padding:.9rem 0;border:0;border-bottom:1px solid var(--line);background:white;font-weight:600}.help-nav button.active{color:var(--blue)}.help-panel{display:none}.help-panel.active{display:block}.help-panel h2{font-size:clamp(2.5rem,5vw,5rem);margin:0 0 2rem}.help-panel h3{font-family:var(--serif);font-size:1.8rem}.help-panel p,.help-panel li{color:var(--muted)}
+    .brand-board{background:var(--mist)}.logo-showcase{display:grid;grid-template-columns:1fr 1fr}.logo-sample{min-height:300px;display:grid;place-items:center}.logo-sample.dark{background:var(--black);color:white}.big-logo{font-size:2.5rem}.palette{display:grid;grid-template-columns:repeat(6,1fr)}.color{aspect-ratio:1;padding:1rem;display:flex;flex-direction:column;justify-content:flex-end;font-size:.72rem}.color:nth-child(3),.color:nth-child(4),.color:nth-child(5){color:white}.type-show{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}.type-card{background:white;padding:3rem}.type-card .sample{font-size:clamp(3rem,6vw,7rem);line-height:1}.voice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.voice-card{border:1px solid var(--line);padding:2rem}.voice-card h3{font-family:var(--serif);font-size:1.7rem}.rationale-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}.rationale-card{border:1px solid var(--line);padding:2rem}.rationale-card h3{font-family:var(--serif);font-size:1.8rem}.flow{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin-top:1rem}.flow span{background:var(--mist);padding:.6rem .75rem;font-size:.74rem}.flow b{color:var(--blue)}.audit{width:100%;border-collapse:collapse}.audit th,.audit td{padding:1rem;border-bottom:1px solid var(--line);text-align:left;font-size:.82rem}.audit th{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em}.pass{color:var(--success);font-weight:700}
+    .cart-layout,.checkout-layout{display:grid;grid-template-columns:1.2fr .8fr;gap:4rem;padding:4rem 0}.cart-item{display:grid;grid-template-columns:120px 1fr auto;gap:1.2rem;padding:1rem 0;border-bottom:1px solid var(--line)}.cart-item img{width:120px;height:150px;object-fit:cover}.qty{display:flex;align-items:center;border:1px solid var(--line);width:max-content}.qty button{width:38px;height:38px;border:0;background:white}.qty span{width:34px;text-align:center}.order-box{background:var(--mist);padding:2rem;align-self:start;position:sticky;top:130px}.order-line{display:flex;justify-content:space-between;padding:.6rem 0}.order-line.total{border-top:1px solid var(--line);margin-top:1rem;padding-top:1rem;font-weight:700;font-size:1.1rem}.empty{text-align:center;padding:6rem 1rem}.payment-tabs{display:flex;border-bottom:1px solid var(--line);margin-bottom:1.5rem}.payment-tabs button{border:0;background:white;padding:1rem;font-size:.78rem;font-weight:700}.payment-tabs button.active{color:var(--blue);border-bottom:2px solid var(--blue)}
+    .footer{background:var(--black);color:white;padding:5rem 0 2rem}.footer-grid{display:grid;grid-template-columns:1.4fr repeat(4,1fr);gap:3rem}.footer h3{font-family:var(--serif);font-size:2rem;margin:0}.footer h4{font-size:.72rem;text-transform:uppercase;letter-spacing:.11em;margin:0 0 1rem}.footer a{display:block;color:#b9c0c5;text-decoration:none;font-size:.8rem;margin:.55rem 0}.footer a:hover{color:white}.footer-bottom{border-top:1px solid #343434;margin-top:4rem;padding-top:1.5rem;display:flex;justify-content:space-between;color:#858d93;font-size:.7rem}
+    .drawer,.modal{position:fixed;inset:0;z-index:300;visibility:hidden;opacity:0;transition:.25s}.drawer.open,.modal.open{visibility:visible;opacity:1}.drawer-bg,.modal-bg{position:absolute;inset:0;background:rgba(0,0,0,.55)}.drawer-panel{position:absolute;right:0;top:0;bottom:0;width:min(420px,88vw);background:white;padding:2rem;transform:translateX(100%);transition:.35s var(--ease);overflow:auto}.drawer.open .drawer-panel{transform:none}.drawer-panel>a{display:block;font-family:var(--serif);font-size:2rem;text-decoration:none;padding:.6rem 0}.drawer-divider{margin:1.5rem 0;border-top:1px solid var(--line)}.modal-card{position:absolute;left:50%;top:50%;transform:translate(-50%,-47%);width:min(960px,92vw);max-height:90vh;overflow:auto;background:white;transition:.35s var(--ease)}.modal.open .modal-card{transform:translate(-50%,-50%)}.modal-close{position:absolute;right:1rem;top:1rem;z-index:5;width:44px;height:44px;border:0;background:white;font-size:1.3rem}.tryon-layout{display:grid;grid-template-columns:1.1fr .9fr;min-height:620px}.camera{background:#171717;position:relative;overflow:hidden;display:grid;place-items:center}.camera video{width:100%;height:100%;object-fit:cover;display:none}.camera.live video{display:block}.camera-guide{position:absolute;inset:12% 23%;border:1px solid rgba(255,255,255,.75);border-radius:48% 48% 30% 30%}.camera-placeholder{text-align:center;color:white;max-width:300px;padding:2rem}.camera.live .camera-placeholder{display:none}.camera-chip{position:absolute;left:1rem;top:1rem;background:var(--blue);color:white;padding:.55rem .7rem;font-size:.68rem;font-weight:700}.tryon-controls{padding:3rem;display:flex;flex-direction:column;justify-content:center}.tryon-controls h2{font-size:3.2rem;margin:.4rem 0 1rem}.toast{position:fixed;left:50%;bottom:2rem;z-index:500;transform:translate(-50%,30px);background:var(--black);color:white;padding:.9rem 1.2rem;font-size:.8rem;opacity:0;visibility:hidden;transition:.3s}.toast.show{opacity:1;visibility:visible;transform:translate(-50%,0)}
+    .product-shot img[src^="assets/try-"],.gallery img[src^="assets/try-"]{object-fit:contain;padding:1.25rem;background:#f0efec}.camera .uploaded-photo{transform:none}
+    .contact-team{display:flex;gap:.65rem;margin:1.25rem 0}.contact-team img{width:64px;height:64px;object-fit:cover;filter:grayscale(1)}
+    .camera{--garment-scale:1;--garment-y:0px;--garment-x:0px}.camera video{transform:scaleX(-1)}.camera .uploaded-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:none;transform:scaleX(-1)}.camera.photo .uploaded-photo{display:block}.camera.photo .camera-placeholder{display:none}.garment-layer{position:absolute;z-index:3;top:13%;left:50%;width:58%;height:72%;object-fit:contain;object-position:top center;display:none;pointer-events:none;filter:drop-shadow(0 8px 12px rgba(0,0,0,.15));transform-origin:top center;transform:translate(calc(-50% + var(--garment-x)),var(--garment-y)) scale(var(--garment-scale))}.camera.live .garment-layer,.camera.photo .garment-layer{display:block}.camera-guide{z-index:2}.camera-chip{z-index:5}.try-status{position:absolute;z-index:5;left:1rem;bottom:1rem;background:rgba(5,5,5,.76);color:white;padding:.55rem .7rem;font-size:.7rem;display:none}.camera.live .try-status,.camera.photo .try-status{display:block}.try-pieces{display:grid;grid-template-columns:repeat(3,1fr);gap:.55rem;margin:1rem 0}.try-piece{border:1px solid var(--line);background:white;padding:.55rem;text-align:left;min-height:74px;font-size:.7rem}.try-piece.active{border:2px solid var(--blue);color:var(--blue)}.try-piece span{display:block;font-weight:700;margin-bottom:.2rem}.fit-controls{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin:1rem 0}.range-field{display:grid;gap:.35rem;font-size:.72rem;font-weight:700}.range-field input{width:100%;accent-color:var(--blue)}.try-tools{display:flex;flex-wrap:wrap;gap:.45rem}.try-tools button,.try-tools label{border:1px solid var(--line);background:white;min-height:40px;padding:.55rem .7rem;font-size:.7rem;font-weight:700;display:inline-flex;align-items:center;cursor:pointer}.capture-preview{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--line);display:none}.capture-preview.show{display:block}.capture-preview img{width:120px;aspect-ratio:3/4;object-fit:cover;background:var(--mist)}.capture-preview>div{display:flex;gap:1rem;align-items:center}.try-help{font-size:.72rem;color:var(--muted);margin:.8rem 0}.camera-error{color:#c92a2a;font-size:.75rem;min-height:1.2em}
+    @media(max-width:600px){.tryon-layout{display:block}.camera{min-height:52vh}.tryon-controls{padding:1.3rem}.tryon-controls h2{font-size:2.2rem}.garment-layer{width:63%;height:74%;top:12%}.fit-controls{grid-template-columns:1fr}.try-pieces{gap:.35rem}.try-piece{min-height:64px;padding:.4rem}}
+    @media(max-width:1180px){.main-nav{gap:1rem}.enterprise-pill{display:none}.product-grid{grid-template-columns:repeat(2,1fr)}.hero-copy{width:min(650px,66vw)}.journal-grid{grid-template-columns:1fr 1fr}.article-card:first-child{grid-column:1/3}.footer-grid{grid-template-columns:1.4fr repeat(2,1fr)}}
+    @media(max-width:900px){.announcement{font-size:.65rem}.nav{height:68px;padding:0 1rem;display:flex;justify-content:space-between}.main-nav,.enterprise-nav,.utility .icon-btn:not(.cart-button){display:none!important}.menu-btn{display:grid}.hero{grid-template-columns:1fr;min-height:820px}.hero-primary{min-height:520px}.hero-secondary{min-height:300px}.hero-copy{top:44%;left:1.25rem;width:calc(100% - 2.5rem)}.hero-copy h1{font-size:clamp(3.5rem,13vw,6.2rem)}.hero-secondary>img{height:100%}.phone{width:150px;border-width:5px;border-radius:24px}.phone-card{display:none}.body-frame{inset:20% 17% 16%}.value-strip{grid-template-columns:1fr 1fr}.value-item:nth-child(2){border-right:0}.try-story,.editorial,.enterprise-teaser,.pdp,.enterprise-hero,.content-grid,.contact-layout,.spec-layout,.lead-layout,.cart-layout,.checkout-layout{grid-template-columns:1fr}.try-visual{min-height:560px}.editorial-image{min-height:520px}.enterprise-teaser img{min-height:500px}.pdp-panel{position:static}.enterprise-visual{min-height:600px;order:-1}.enterprise-copy{padding:4rem 2rem}.detail-sections{grid-template-columns:1fr}.journey{grid-template-columns:1fr 1fr}.catalog{grid-template-columns:1fr}.filters{position:static;display:none}.filters.open{display:block}.filter-toggle{display:inline-flex}.help-layout{grid-template-columns:1fr}.help-nav{position:static;display:flex;gap:.5rem;overflow-x:auto}.help-nav button{width:auto;white-space:nowrap;padding:.8rem}.palette{grid-template-columns:repeat(3,1fr)}.footer-grid{grid-template-columns:1fr 1fr}.footer-grid>div:first-child{grid-column:1/3}.tryon-layout{grid-template-columns:1fr}.camera{min-height:440px}.newsletter{grid-template-columns:1fr}.social-grid{grid-template-columns:1fr 1fr}.social-tile:first-child{grid-column:1/3}.trust-row{grid-template-columns:1fr 1fr}}
+    @media(max-width:600px){.shell{padding:0 1rem}.section{padding:4.5rem 0}.section-head{display:block}.section-head p{margin-top:1rem}.hero-primary{min-height:500px}.hero-copy h1{font-size:3.7rem}.hero-copy p{font-size:.93rem}.hero-actions{display:grid}.hero-actions .btn{width:100%}.hero-index{display:none}.value-strip{grid-template-columns:1fr}.value-item{border-right:0}.product-grid{gap:1.5rem .6rem}.product-meta{display:block}.product-price{display:block;margin-top:.25rem}.try-copy,.editorial-copy,.enterprise-teaser>div{padding:4rem 1rem}.try-visual{min-height:460px}.quote-grid,.trust-row,.b2b-grid,.values,.team,.voice-grid,.rationale-grid{grid-template-columns:1fr}.social-grid{grid-template-columns:1fr}.social-tile,.social-tile:first-child{grid-column:auto;min-height:390px}.gallery{gap:.5rem}.pdp{gap:2rem}.sizes{grid-template-columns:repeat(5,1fr)}.journey{grid-template-columns:1fr}.mirror-ui{left:24%;width:50%}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.journal-grid{grid-template-columns:1fr}.article-card:first-child{grid-column:auto}.help-layout{gap:2rem}.logo-showcase,.type-show{grid-template-columns:1fr}.palette{grid-template-columns:1fr 1fr}.color{aspect-ratio:1.35}.cart-item{grid-template-columns:90px 1fr}.cart-item img{width:90px;height:120px}.cart-item>strong{grid-column:2}.footer-grid{grid-template-columns:1fr 1fr;gap:2rem 1rem}.footer-bottom{display:block}.quick{opacity:1;transform:none}.modal-card{width:96vw}.tryon-controls{padding:2rem}.tryon-controls h2{font-size:2.5rem}}
+    @media(max-width:600px){.tutorial-grid,.architecture-map{grid-template-columns:1fr}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+    /* refined AURA wordmark, tutorial media and architecture map */
+    .logo{font-family:var(--serif);font-size:1.18rem;font-weight:400;letter-spacing:.24em;gap:.58rem}.logo-mark{width:28px;height:28px;border:1px solid currentColor;border-radius:50%;background:transparent;color:currentColor;font-family:var(--serif);font-size:1rem;font-weight:400;line-height:1}.logo:hover .logo-mark{background:var(--black);color:white}.logo-sample.dark .logo:hover .logo-mark{background:white;color:var(--black)}.big-logo{font-size:2.6rem}.big-logo .logo-mark{width:48px;height:48px;font-size:1.55rem}.tutorial-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border-block:1px solid var(--line)}.tutorial-card{background:white}.tutorial-card video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#111}.tutorial-copy{padding:1.5rem 1.6rem 1.8rem}.tutorial-copy h3{font-family:var(--serif);font-size:1.8rem;margin:.35rem 0 .65rem}.tutorial-copy p{color:var(--muted);font-size:.86rem;margin:0}.tutorial-copy .link-arrow{display:inline-block;margin-top:1.2rem}.video-card video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.9}.video-card .play{z-index:2}.film-caption{position:absolute;left:1rem;bottom:1rem;z-index:3;background:rgba(5,5,5,.78);color:white;padding:.55rem .7rem;font-size:.7rem;letter-spacing:.04em}.hello-video video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.86}.hello-video .play{z-index:2}.hello-video .video-copy{z-index:3}.architecture-map{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}.architecture-branch{background:white;padding:1.8rem;min-height:300px}.architecture-branch h3{font-family:var(--serif);font-size:2rem;margin:.35rem 0 1rem}.architecture-branch ul{list-style:none;padding:0;margin:0}.architecture-branch li{border-top:1px solid var(--line);padding:.75rem 0;font-size:.82rem}.architecture-branch a{text-decoration:none}.architecture-branch a:hover{color:var(--blue)}.architecture-root{background:var(--black);color:white;padding:1.3rem 1.6rem;margin-bottom:1px;font-family:var(--serif);font-size:1.8rem}.status-chip{display:inline-flex;align-items:center;min-height:28px;padding:0 .55rem;border:1px solid currentColor;font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em}.status-implemented{color:var(--success)}.status-prototype{color:#9a6700}.status-planned{color:#66707a}.pdp-media-note{position:absolute;left:1rem;top:1rem;z-index:3;background:white;padding:.55rem .7rem;font-size:.68rem;font-weight:700}.pdp-panel .product-kicker{margin-bottom:.5rem}.catalog-top select{min-width:150px}.camera{--pose-scale:1;--pose-x:0px;--pose-y:0px}.camera.pose-ready .camera-guide{border-color:#6fe7c2;box-shadow:0 0 0 999px rgba(0,0,0,.06)}.camera.pose-ready .try-status{background:#0b6b50}.camera:not(.live):not(.photo) .garment-layer{display:none}.camera-live-help{font-size:.74rem;color:var(--muted);margin:.7rem 0 0}.camera .garment-layer{will-change:transform;height:auto;max-height:72%;transform:translate(calc(-50% + var(--garment-x) + var(--pose-x)),calc(var(--garment-y) + var(--pose-y))) scale(var(--garment-scale)) scale(var(--pose-scale))}.camera .uploaded-photo{transform:none}.camera.live:not(.rear) video{transform:scaleX(-1)}.camera.live.rear video{transform:none}.camera.live.rear .camera-chip{background:#212529}.try-video-note{font-size:.72rem;color:var(--muted);margin-top:.8rem}
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"AURA","description":"Omnichannel fashion-tech brand combining browser-based virtual try-on and retail AR Smart Mirrors."}</script>
+</head>
+<body>
+  <a class="skip" href="#page-content">Skip to content</a>
+  <div class="announcement">Complimentary delivery over $150 · 30-day returns · No app required</div>
+  <header class="site-header" id="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="logo" href="#home" data-route="home" aria-label="AURA home">
+<span class="logo-mark">A</span>
+<span>AURA</span>
+</a>
+      <div class="main-nav">
+        <a href="#category" data-route="category" data-catalog="women">Women</a>
+<a href="#category" data-route="category" data-catalog="men">Men</a>
+<a href="#category" data-route="category" data-catalog="new">New Arrivals</a>
+<a href="#category" data-route="category" data-catalog="accessories">Accessories</a>
+      </div>
+      <div class="enterprise-nav">
+        <a href="#enterprise" data-route="enterprise">Smart Mirror</a>
+<a href="#enterprise-how" data-scroll="enterprise-how">How it works</a>
+<a href="#enterprise-cases" data-scroll="enterprise-cases">Use cases</a>
+<a href="#enterprise-specs" data-scroll="enterprise-specs">Technology</a>
+<a href="#enterprise-faq" data-scroll="enterprise-faq">FAQ</a>
+      </div>
+      <div class="utility">
+        <a class="enterprise-pill" href="#enterprise" data-route="enterprise">Enterprise: Smart Mirror Solutions</a>
+        <button class="icon-btn" data-modal="search-modal" aria-label="Search">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+<circle cx="11" cy="11" r="7"/>
+<path d="m20 20-4-4"/>
+</svg>
+</button>
+        <button class="icon-btn cart-button" data-route="cart" aria-label="Shopping cart">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+<path d="M3 4h2l2.2 11h10.6L20 7H6"/>
+<circle cx="9" cy="20" r="1"/>
+<circle cx="17" cy="20" r="1"/>
+</svg>
+<span class="cart-count" id="cart-count">0</span>
+</button>
+        <button class="icon-btn" data-modal="profile-modal" aria-label="Profile">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+<circle cx="12" cy="8" r="4"/>
+<path d="M4 21c.7-5 3.3-7 8-7s7.3 2 8 7"/>
+</svg>
+</button>
+        <button class="icon-btn menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+<path d="M3 6h18M3 12h18M3 18h18"/>
+</svg>
+</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="page-content" tabindex="-1">
+    <section class="page active" id="home" data-title="AURA — Fashion, fitted to reality">
+      <div class="hero">
+        <div class="hero-primary">
+<img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1600&q=85" alt="Model wearing AURA's contemporary tailoring" fetchpriority="high">
+<span class="hero-index">Collection 01 / Spatial form</span>
+</div>
+        <div class="hero-secondary">
+<img src="https://images.unsplash.com/photo-1550047805-4c070f80bc23?auto=format&fit=crop&w=1000&q=82" alt="Close fashion portrait used in the AURA virtual try-on interface">
+<div class="phone" aria-hidden="true">
+<img src="https://images.unsplash.com/photo-1550047805-4c070f80bc23?auto=format&fit=crop&w=500&q=78" alt="">
+<div class="phone-ui">
+<span class="scan">Live AR</span>
+<div class="body-frame">
+</div>
+<div class="phone-card">
+<strong>Sand Layering Blazer</strong>
+<span>Elegant fit preview</span>
+<button>Try</button>
+</div>
+</div>
+</div>
+<span class="hero-label">BROWSER-BASED TRY-ON</span>
+</div>
+        <div class="hero-copy">
+<p class="eyebrow">Fashion × spatial computing</p>
+<h1 class="display">Experience Fashion in Real-Time. Try Before You Buy.</h1>
+<p>See how a piece sits with you before it reaches your door. AURA combines an edited wardrobe with private, browser-based virtual try-on, so you can decide with more confidence.</p>
+<div class="hero-actions">
+<a class="btn btn-tech" href="#tryon" data-modal="tryon-modal">Shop &amp; Try On <span class="arrow">↗</span>
+</a>
+<a class="btn btn-light" href="#category" data-route="category">Explore New Arrivals <span class="arrow">→</span>
+</a>
+</div>
+</div>
+      </div>
+      <div class="value-strip" aria-label="AURA benefits">
+<div class="value-item">
+<span class="value-no">01</span>
+<div>
+<strong>No app required</strong>
+<span>Open the fitting room in your browser.</span>
+</div>
+</div>
+<div class="value-item">
+<span class="value-no">02</span>
+<div>
+<strong>Privacy first</strong>
+<span>Your camera stays on your device.</span>
+</div>
+</div>
+<div class="value-item">
+<span class="value-no">03</span>
+<div>
+<strong>Fit with context</strong>
+<span>Compare proportions, colour and styling.</span>
+</div>
+</div>
+<div class="value-item">
+<span class="value-no">04</span>
+<div>
+<strong>Easy returns</strong>
+<span>30 days to decide at home.</span>
+</div>
+</div>
+</div>
+
+      <section class="section shell" id="new-arrivals">
+<div class="section-head">
+<div>
+<p class="eyebrow blue">New form / 01</p>
+<h2 class="display">Live Try-On Collection</h2>
+</div>
+<p>Elegant, minimal silhouettes at a considered mid-market price. A blue technology cue marks pieces that open directly in AURA Live.</p>
+</div>
+<div class="product-grid" id="home-products">
+</div>
+</section>
+
+      <section class="try-story black" id="try-story">
+<div class="try-copy">
+<p class="eyebrow blue">A fitting room, re-framed</p>
+<h2 class="display">Try it where you are.</h2>
+<p>Use your camera to understand shape and colour in seconds. The standard product journey always remains available.</p>
+<div class="steps">
+<div class="step">
+<span>1</span>
+<div>
+<strong>Choose a Live-enabled piece</strong>
+<p>Look for the electric blue label in any collection.</p>
+</div>
+</div>
+<div class="step">
+<span>2</span>
+<div>
+<strong>Open your camera</strong>
+<p>No download or account is needed for the prototype.</p>
+</div>
+</div>
+<div class="step">
+<span>3</span>
+<div>
+<strong>Compare, select, buy</strong>
+<p>Return to size and colour controls without losing your choice.</p>
+</div>
+</div>
+</div>
+<button class="btn btn-tech" data-modal="tryon-modal">Launch interactive demo <span class="arrow">↗</span>
+</button>
+<p class="privacy-note">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+<rect x="5" y="10" width="14" height="10"/>
+<path d="M8 10V7a4 4 0 0 1 8 0v3"/>
+</svg>
+<span>Camera access is optional and can be withdrawn at any time. The prototype does not upload or store camera imagery.</span>
+</p>
+</div>
+<div class="try-visual">
+<img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=1400&q=82" loading="lazy" alt="Shopper exploring contemporary fashion on a mobile device">
+<div class="floating-note">
+<span class="eyebrow blue">Live fit cue</span>
+<p>
+<strong>Proportion: balanced</strong>
+<br>Selected size M · Slate</p>
+</div>
+</div>
+</section>
+
+      <section class="section shell" aria-labelledby="tutorials-title">
+<div class="section-head">
+<div>
+<p class="eyebrow blue">Watch before you try</p>
+<h2 class="display" id="tutorials-title">Two short guides.</h2>
+</div>
+<p>Use the camera guide for online shopping. Retail teams can preview the Smart Mirror flow before requesting a trial.</p>
+</div>
+<div class="tutorial-grid">
+<article class="tutorial-card">
+<video controls preload="metadata" playsinline src="assets/aura-camera-guide.mp4" aria-label="Video guide for using AURA Live camera try-on"></video>
+<div class="tutorial-copy">
+<p class="eyebrow blue">AURA Live / 00:12</p>
+<h3>How to use Camera Live</h3>
+<p>Start the camera, allow access, align your shoulders and refine the garment layer with the three fit controls.</p>
+<button class="link-arrow" data-modal="tryon-modal" type="button">Open Camera Live →</button>
+</div>
+</article>
+<article class="tutorial-card">
+<video controls preload="metadata" playsinline src="assets/aura-mirror-guide.mp4" aria-label="Video guide for using the AURA Smart Mirror"></video>
+<div class="tutorial-copy">
+<p class="eyebrow blue">AURA Mirror / 00:12</p>
+<h3>How the Smart Mirror works</h3>
+<p>Scan a rail tag, compare the approved catalogue, request help and send a consented cart to the shopper's phone.</p>
+<a class="link-arrow" href="#enterprise" data-route="enterprise" data-after="enterprise-how">Explore the store flow →</a>
+</div>
+</article>
+</div>
+</section>
+
+      <section class="editorial">
+<div class="editorial-image">
+<img src="assets/editorial-women-reference.webp" loading="lazy" alt="Elegant ivory shirt and taupe wide-leg trousers reference look">
+</div>
+<div class="editorial-copy">
+<p class="eyebrow">Campaign / Between realities</p>
+<h2 class="display">Clothes should meet you halfway.</h2>
+<p>A digital layer should make fashion feel more human, not more complicated. We edit every interaction until the technology disappears and the choice becomes clear.</p>
+<a class="btn btn-light" href="#journal" data-route="journal">Read the editorial <span class="arrow">→</span>
+</a>
+</div>
+</section>
+
+      <section class="section shell">
+<div class="section-head">
+<div>
+<p class="eyebrow blue">Confidence, built in</p>
+<h2 class="display">Why shop with AURA</h2>
+</div>
+<p>Credibility comes from transparent choices, accessible support and technology that never blocks a normal purchase.</p>
+</div>
+<div class="trust-row">
+<article class="trust-card">
+<svg viewBox="0 0 24 24" fill="none" stroke-width="1.7">
+<path d="M12 3 4 7v5c0 5 3.5 8 8 9 4.5-1 8-4 8-9V7z"/>
+<path d="m9 12 2 2 4-5"/>
+</svg>
+<h3>Privacy-first AR</h3>
+<p>Clear camera consent, local processing in this prototype and a non-camera path at every step.</p>
+</article>
+<article class="trust-card">
+<svg viewBox="0 0 24 24" fill="none" stroke-width="1.7">
+<path d="M3 6h18v12H3zM3 10h18"/>
+</svg>
+<h3>Secure checkout</h3>
+<p>Familiar payment steps, visible totals and no surprise charges before confirmation.</p>
+</article>
+<article class="trust-card">
+<svg viewBox="0 0 24 24" fill="none" stroke-width="1.7">
+<path d="m4 12 4-4v3h8a4 4 0 1 1 0 8h-3"/>
+</svg>
+<h3>30-day returns</h3>
+<p>Simple online initiation, original-payment refunds and trackable return updates.</p>
+</article>
+<article class="trust-card">
+<svg viewBox="0 0 24 24" fill="none" stroke-width="1.7">
+<path d="M4 19V8l8-4 8 4v11M8 12h8M8 16h8"/>
+</svg>
+<h3>Human support</h3>
+<p>Shopper, retailer and partner questions are routed to the right team from one contact page.</p>
+</article>
+</div>
+</section>
+
+      <section class="section mist">
+<div class="shell">
+<div class="section-head">
+<div>
+<p class="eyebrow blue">Prototype feedback</p>
+<h2 class="display">Seen through their eyes</h2>
+</div>
+<p>Representative usability-test testimonials for the concept prototype. Replace with verified customer reviews before commercial launch.</p>
+</div>
+<div class="quote-grid">
+<article class="quote">
+<blockquote>“I understood the shape before choosing a size. The blue try-on button felt distinct from buying.”</blockquote>
+<small>Mai N. · prototype shopper</small>
+</article>
+<article class="quote">
+<blockquote>“It never forced me into AR. I could compare, close it and continue shopping normally.”</blockquote>
+<small>Clara B. · accessibility test</small>
+</article>
+<article class="quote">
+<blockquote>“The enterprise route feels like the same brand, but the information is finally about my store.”</blockquote>
+<small>Jonas K. · retail manager test</small>
+</article>
+</div>
+</div>
+</section>
+
+      <section class="section shell">
+<div class="section-head">
+<div>
+<p class="eyebrow blue">Community / @aurainmotion</p>
+<h2 class="display">Worn in the wild</h2>
+</div>
+<a class="link-arrow" href="https://www.instagram.com" target="_blank" rel="noreferrer">Follow AURA →</a>
+</div>
+<div class="social-grid">
+<a class="social-tile" href="https://www.instagram.com" target="_blank" rel="noreferrer">
+<img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=1200&q=82" loading="lazy" alt="Street style in a tailored AURA look">
+<span class="social-tag">@aura.in.motion · Look 01</span>
+</a>
+<a class="social-tile" href="https://www.instagram.com" target="_blank" rel="noreferrer">
+<img src="assets/editorial-men-reference.webp" loading="lazy" alt="Minimal sand blazer and stone knit menswear reference looks">
+<span class="social-tag">Community edit</span>
+</a>
+<a class="social-tile" href="https://www.instagram.com" target="_blank" rel="noreferrer">
+<img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=82" loading="lazy" alt="Runway-inspired everyday fashion">
+<span class="social-tag">Studio notes</span>
+</a>
+</div>
+<div class="newsletter">
+<div>
+<p class="eyebrow blue">Early access, considered</p>
+<h2 class="display">Join the fitting room.</h2>
+<p>New drops, styling notes and product-test invitations. Two useful emails a month; leave in one click.</p>
+</div>
+<form class="newsletter-form" data-success="You’re on the AURA list. Check your inbox for confirmation.">
+<label class="sr" for="newsletter-email">Email address</label>
+<input id="newsletter-email" name="email" type="email" placeholder="Email address" required>
+<button type="submit">Join list →</button>
+</form>
+</div>
+</section>
+
+      <section class="enterprise-teaser black">
+<img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1400&q=84" loading="lazy" alt="Modern fashion boutique prepared for AURA Smart Mirror">
+<div>
+<p class="eyebrow blue">For retail teams</p>
+<h2 class="display">The endless aisle, in the fitting room.</h2>
+<p>Bring AURA's digital layer into physical stores with a human-sized 55-inch AR Smart Mirror. Explore colour, stock and styling without repeating the fitting-room journey.</p>
+<div class="feature-inline">
+<span>Endless aisle</span>
+<span>QR cart sync</span>
+<span>Assisted selling</span>
+</div>
+<a class="btn btn-tech" href="#enterprise" data-route="enterprise">Explore Smart Mirror Solutions <span class="arrow">↗</span>
+</a>
+</div>
+</section>
+    </section>
+
+    <section class="page" id="category" data-title="New Arrivals — AURA">
+<div class="page-hero shell">
+<div class="breadcrumb">
+<a href="#home" data-route="home">Home</a>
+<span>/</span>
+<span id="category-breadcrumb">New Arrivals</span>
+</div>
+<p class="eyebrow blue">Collection 01</p>
+<h1 class="display" id="category-title">New Arrivals</h1>
+<p id="category-description">Elegant, minimal pieces in ivory, taupe, sand and charcoal. Mid-market pricing from $35 to $139, with selected looks available for virtual try-on.</p>
+</div>
+<div class="shell catalog">
+<aside class="filters" id="filters" aria-label="Product filters">
+<div class="filter-group">
+<h3>Category</h3>
+<label class="check">
+<input type="checkbox" data-filter-group="category" data-filter="outerwear"> Outerwear</label>
+<label class="check">
+<input type="checkbox" data-filter-group="category" data-filter="dresses"> Dresses</label>
+<label class="check">
+<input type="checkbox" data-filter-group="category" data-filter="knitwear"> Knitwear</label>
+<label class="check">
+<input type="checkbox" data-filter-group="category" data-filter="separates"> Tailored separates</label>
+<label class="check">
+<input type="checkbox" data-filter-group="category" data-filter="accessories"> Accessories</label>
+</div>
+<div class="filter-group">
+<h3>Technology</h3>
+<label class="check">
+<input type="checkbox" data-filter-group="technology" data-filter="live"> Live Try-On enabled</label>
+</div>
+<div class="filter-group">
+<h3>Colour</h3>
+<label class="check">
+<input type="checkbox" data-filter-group="colour" data-filter="ivory"> Ivory / Cream</label>
+<label class="check">
+<input type="checkbox" data-filter-group="colour" data-filter="taupe"> Taupe / Sand</label>
+<label class="check">
+<input type="checkbox" data-filter-group="colour" data-filter="charcoal"> Charcoal</label>
+</div>
+<div class="filter-group">
+<h3>Size</h3>
+<label class="check">
+<input type="checkbox" data-filter-group="size" data-filter="small"> XS–S</label>
+<label class="check">
+<input type="checkbox" data-filter-group="size" data-filter="medium"> M–L</label>
+<label class="check">
+<input type="checkbox" data-filter-group="size" data-filter="xl"> XL</label>
+</div>
+</aside>
+<div>
+<div class="catalog-top">
+<button class="btn btn-outline btn-small filter-toggle" id="filter-toggle">Filters</button>
+<span id="result-count">8 pieces</span>
+<label>Sort <select id="sort-products" aria-label="Sort products">
+<option>Featured</option>
+<option>Newest</option>
+<option>Price: low to high</option>
+<option>Price: high to low</option>
+</select>
+</label>
+</div>
+<div class="product-grid" id="catalog-products">
+</div>
+</div>
+</div>
+<section class="section mist">
+<article class="shell seo-copy">
+<p class="eyebrow blue">The collection guide</p>
+<h2 class="display">A considered guide to virtual try-on fashion</h2>
+<p class="lead">Our latest collection brings editorial fashion and practical decision-making into the same space. Browse first, use the fitting tool when it helps, and purchase through a familiar product flow.</p>
+<p>AURA’s new arrivals are built around proportion: a long trench that holds its line, a fluid dress that changes with movement, a structured blazer that makes a quiet statement, and knitwear designed for repeated wear. Rather than treating digital tools as a spectacle, our virtual try-on fashion experience helps you answer three simple questions. Does the silhouette suit the way I like to dress? Does this colour work with what I already own? Which size should I inspect more closely before adding it to my bag?</p>
+<h3>How to choose a silhouette online</h3>
+<p>Begin with the product’s intended fit. A relaxed garment should not be judged by the same visual cues as a close-cut piece. On each product page, AURA explains the model’s size, garment measurements, fabric behaviour and styling intention. Open Live Try-On to compare overall length, shoulder position and colour near your face. The view is directional rather than a tailoring guarantee, so the measurement table remains the most reliable source for your final size choice. This combination keeps virtual try-on fashion useful without pretending that a camera can replace every physical detail.</p>
+<p>For outerwear, pay attention to layering room. Measure a coat you already enjoy from shoulder to shoulder and compare it with the garment measurements. For dresses, compare both bust and hip measurements, then read whether the fabric has stretch. For knitwear, look at the intended ease and fibre composition. These steps are fast, repeatable and available without opening your camera.</p>
+<h3>Privacy and accessibility by design</h3>
+<p>Camera access is optional. If you launch Live Try-On, the browser asks for permission at that moment and shows a visible live indicator. In this prototype, the camera feed stays on the device and is not stored. You can close the experience, revoke access and continue with images, video, measurements and our size guide. Keyboard navigation, clear focus states, readable contrast and large controls support people who interact in different ways.</p>
+<p>A technology feature should remove uncertainty, not create a new barrier. That is why every blue button means technology or experimentation, while every black button means a shopping transaction. The same colour logic follows you from collection to product, cart and checkout. You can recognise an action before reading every word.</p>
+<h3>Building a wardrobe with fewer wrong turns</h3>
+<p>Start with the pieces that connect to at least three things you already own. A sand blazer may complete a dress, soften denim and add shape to knitwear. A neutral trench can bridge work and weekend styling. Use the “Complete the Look” section for ideas, then edit them against your real wardrobe rather than buying an entire styled set by default. Virtual try-on fashion is most valuable when it supports a more deliberate choice.</p>
+<p>Our collection pages place products before editorial text, because shopping should remain the primary task. This deeper guide sits below the browsing experience for customers who want more context and for search engines that need meaningful, original information. We avoid repeating empty keywords or hiding important facts. Each page should answer a real product question, use clear headings and connect directly to size, delivery, returns or support.</p>
+<h3>From screen to fitting room</h3>
+<p>AURA is an omnichannel system. Online shoppers use the browser experience, while partner retailers can bring the same product language into stores through a 55-inch Smart Mirror. A shopper can explore an item in-store, scan a QR code and continue on a phone without rebuilding the cart. The goal is continuity: the product, size and colour remain understandable across channels.</p>
+<h3>Reading product evidence well</h3>
+<p>Online confidence depends on the quality of the evidence, not the number of decorative images. Start with the front, side and back views, then inspect close details for weave, lining, seams and fastening. A movement film should reveal how the material folds and returns rather than repeat the campaign image. Product descriptions should state what a piece is made from, how it is intended to fit and what care it requires. Reviews add another layer when they identify the purchased size and remain tied to a verified order.</p>
+<p>Stock information also changes the decision. “In stock” is useful; “only four remaining in size M” is clearer. Delivery estimates should reflect the selected destination and appear before the cart. Return conditions belong beside the decision rather than behind a legal link. AURA keeps these elements close to the colour, size and action controls so customers can resolve uncertainty without leaving the product page.</p>
+<h3>Using Live Try-On responsibly</h3>
+<p>Place the device on a stable surface, use an uncluttered background and stand far enough away for the relevant part of the body to remain visible. Avoid interpreting small visual differences as exact measurements. Camera angle, loose clothing and lighting can affect the view. Use the feature to compare direction—longer or shorter, warmer or cooler, structured or fluid—then confirm the final size with garment measurements and fit notes.</p>
+<p>If camera access is unavailable, nothing essential disappears. The product gallery, film transcript, measurement table, colour options, stock, delivery and purchase controls remain available. This progressive approach also protects page speed: core shopping content loads first, while camera code begins only after a deliberate action. Images use responsive delivery and lazy loading below the first viewport to reduce unnecessary transfer.</p>
+<h3>After the purchase</h3>
+<p>The order confirmation should repeat the item, size, colour, delivery destination and expected timeline in plain language. Care guidance follows the product so the customer can find it again. If the piece is not right, the return path explains the condition, deadline, label and refund timing before asking for a reason. That reason can improve product information, but it should never be used to obstruct a lawful return.</p>
+<p>Browse the collection by category, filter for Live-enabled pieces, open any product and decide which evidence you need. You might rely on photography and measurements for one piece, then use virtual try-on fashion for another. Both routes lead to the same accessible cart and transparent checkout. If you still need help, choose “Shopper” on the contact page and your message will be routed to the customer-care team.</p>
+</article>
+</section>
+</section>
+
+    <section class="page" id="product" data-title="Sand Layering Blazer — AURA">
+<div class="page-hero shell">
+<div class="breadcrumb">
+<a href="#home" data-route="home">Home</a>
+<span>/</span>
+<a href="#category" data-route="category">New Arrivals</a>
+<span>/</span>
+<span data-pdp="breadcrumb">Sand Layering Blazer</span>
+</div>
+</div>
+<div class="shell pdp">
+<div class="gallery">
+<img class="main-shot" data-pdp="main-image" src="assets/try-men-sand-blazer.webp" alt="Front view of the sand layering blazer with ivory top and tailored trousers">
+<img class="detail-shot" data-pdp="detail-image-1" src="https://images.unsplash.com/photo-1548883354-94bcfe321cbb?auto=format&fit=crop&w=800&q=82" loading="lazy" alt="Sand layering blazer lapel and fabric detail">
+<img class="detail-shot" data-pdp="detail-image-2" src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=82" loading="lazy" alt="Neutral blazer styled with tailored trousers">
+<div class="video-card">
+<img data-pdp="film-still" src="https://images.unsplash.com/photo-1537832816519-689ad163238b?auto=format&fit=crop&w=1400&q=82" loading="lazy" alt="Still from the Sand Layering Blazer movement and construction film">
+<button class="play" data-modal="film-modal" aria-label="Play why buy from AURA product film">▶</button>
+<span class="film-caption">Why buy from AURA · captioned film</span>
+</div>
+</div>
+<aside class="pdp-panel">
+<p class="eyebrow blue product-kicker" data-pdp="kicker">AURA / LIVE 01</p>
+<h1 class="display" data-pdp="name">Sand Layering Blazer</h1>
+<div class="rating">
+<span aria-label="4.8 out of 5 stars">★★★★★</span>
+<a href="#product-reviews" data-scroll="product-reviews" data-pdp="reviews">4.8 · 28 verified reviews</a>
+</div>
+<div class="price" data-pdp="price">$119.00</div>
+<p data-pdp="short-description">Soft tailoring in a warm sand tone, with a clean shoulder and relaxed line. An elegant everyday layer at an accessible mid-market price.</p>
+<div>
+<strong data-pdp="colour-label">Colour · Sand</strong>
+<div class="swatches" data-pdp="swatches" aria-label="Choose colour">
+<button class="swatch active" style="background:#c8b7a2" aria-label="Sand"></button>
+<button class="swatch" style="background:#d7cbbb" aria-label="Stone"></button>
+<button class="swatch" style="background:#14294b" aria-label="Ink blue"></button>
+</div>
+</div>
+<div>
+<div style="display:flex;justify-content:space-between">
+<strong>Select size</strong>
+<a class="text-link" href="#help" data-route="help">Size guide</a>
+</div>
+<div class="sizes" data-pdp="sizes">
+<button class="size">XS</button>
+<button class="size">S</button>
+<button class="size active">M</button>
+<button class="size">L</button>
+<button class="size" disabled>XL</button>
+</div>
+</div>
+<p class="status" data-pdp="stock">
+<span class="dot">
+</span> In stock in size M · only 4 remaining</p>
+<div class="pdp-actions">
+<button class="btn btn-tech" data-modal="tryon-modal" data-try-product="Sand Layering Blazer" data-try-asset="assets/try-men-sand-blazer.webp" data-pdp="try-button">Live Try-On <span class="arrow">↗</span>
+</button>
+<button class="btn btn-shop add-cart" data-product="Sand Layering Blazer" data-price="119" data-pdp="cart-button">Add to Cart <span class="arrow">→</span>
+</button>
+</div>
+<div class="delivery">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+<path d="M3 6h12v11H3zM15 10h4l2 3v4h-6M7 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4ZM18 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
+</svg>
+<span>
+<strong data-pdp="delivery">Estimated delivery: 16–18 Sep</strong>
+<br>Complimentary above $150 · duties shown at checkout</span>
+</div>
+<div class="accordion">
+<details open>
+<summary>Product description</summary>
+<p data-pdp="description">Single-breasted blazer in a traceable wool blend with a smooth recycled lining, internal pocket and softly padded shoulder. The elongated cut finishes below the hip.</p>
+</details>
+<details>
+<summary>Fit, material &amp; care</summary>
+<p data-pdp="fit">Relaxed tailored fit. Model is 178 cm and wears S. Shell: 62% wool, 34% recycled polyester, 4% elastane. Dry clean only; air between wears.</p>
+</details>
+<details>
+<summary>Shipping &amp; returns</summary>
+<p data-pdp="shipping">Tracked delivery. Return unworn pieces with original tags within 30 days. Start online and use the prepaid label where available.</p>
+</details>
+<details>
+<summary>How to use Live Try-On</summary>
+<p data-pdp="try-instructions">Select Live Try-On, allow camera access, stand in even light and keep your full upper body visible. Close the tool at any time to purchase normally.</p>
+</details>
+<details>
+<summary>Product FAQ</summary>
+<p data-pdp="faq">Need a different size or colour? Use the size guide, compare garment measurements and contact the shopper team before ordering. The virtual view is directional and never replaces the measurement table.</p>
+</details>
+</div>
+</aside>
+</div>
+<section class="detail-sections">
+<article>
+<p class="eyebrow blue">Why you'll love it</p>
+<h3 data-pdp="why-title">Structure without stiffness</h3>
+<p data-pdp="why-copy">A light canvas gives the blazer a defined line while the back vent and stretch blend keep movement natural.</p>
+</article>
+<article>
+<p class="eyebrow blue">Use instructions</p>
+<h3>Fit it in three checks</h3>
+<ol>
+<li>Compare your shoulder width.</li>
+<li>Check sleeve and back length.</li>
+<li>Use Live to assess proportion.</li>
+</ol>
+</article>
+<article>
+<p class="eyebrow blue">Lower-impact details</p>
+<h3>Designed for repeated wear</h3>
+<p>Recycled lining, spare-button repair kit and a QR care record extend the useful life of the garment.</p>
+</article>
+</section>
+<section class="section shell" id="product-reviews">
+<div class="section-head">
+<div>
+<p class="eyebrow blue">Reviews &amp; trust</p>
+<h2 class="display">Fit notes from verified buyers</h2>
+</div>
+<p>Reviews are linked to completed purchases. Prototype entries below illustrate the planned component and must be replaced with live data at launch.</p>
+</div>
+<div class="quote-grid">
+<article class="quote">
+<blockquote>“The shoulder sits cleanly and the try-on view helped me choose between S and M.”</blockquote>
+<small>Elena · size M · verified prototype review</small>
+</article>
+<article class="quote">
+<blockquote>“The fabric is lighter than the gallery suggests, which makes it easy to layer.”</blockquote>
+<small>Jules · size S · verified prototype review</small>
+</article>
+<article class="quote">
+<blockquote>“Delivery estimate was accurate and the return instructions were clear.”</blockquote>
+<small>Hana · size L · verified prototype review</small>
+</article>
+</div>
+</section>
+<section class="section mist">
+<div class="shell">
+<div class="section-head">
+<div>
+<p class="eyebrow blue">Complete the look</p>
+<h2 class="display">Three quiet counterparts</h2>
+</div>
+<a class="link-arrow" href="#category" data-route="category">View collection →</a>
+</div>
+<div class="product-grid" id="complete-products">
+</div>
+</div>
+</section>
+</section>
+
+    <section class="page" id="enterprise" data-title="AURA Smart Mirror — Enterprise">
+<div class="enterprise-hero">
+<div class="enterprise-copy">
+<p class="eyebrow blue">AURA Enterprise / Retail systems</p>
+<h1 class="display">Transform Your Fitting Rooms. Boost Retail Sales with AR Smart Mirrors.</h1>
+<p>Connect physical discovery to your full catalogue with a 55-inch interactive mirror, endless aisle and QR cart hand-off—without turning the boutique into a technology showroom.</p>
+<div class="hero-actions">
+<a class="btn btn-tech" href="#enterprise-lead" data-scroll="enterprise-lead">Book a 14-Day Free Trial <span class="arrow">↗</span>
+</a>
+<a class="btn btn-light" href="#enterprise-lead" data-scroll="enterprise-lead">Request a Demo</a>
+</div>
+<p class="form-note">No unsupported uplift promise: business impact is validated during the trial against agreed store metrics.</p>
+</div>
+<div class="enterprise-visual">
+<img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1600&q=85" alt="Premium retail boutique with a human-sized AURA Smart Mirror concept">
+<div class="mirror-ui" aria-hidden="true">
+<header>
+<span>AURA MIRROR</span>
+<span>LIVE · 55″</span>
+</header>
+<main>
+<p class="eyebrow">LOOK 03</p>
+<strong>See another colour</strong>
+</main>
+<footer>
+<span>Send to phone</span>
+<strong>QR ↗</strong>
+</footer>
+</div>
+<div class="enterprise-metric">
+<strong>Trial-first evaluation</strong>
+<br>Measure engagement, assisted sales and cart hand-off with your own baseline.</div>
+</div>
+</div>
+<div class="feature-marquee black" aria-hidden="true">
+<span>Endless Aisle</span>
+<span>QR Code Cart Sync</span>
+<span>Zero Fitting Room Fatigue</span>
+<span>Assisted Selling</span>
+</div>
+<section class="section shell" aria-labelledby="mirror-guide-title">
+<div class="section-head">
+<div>
+<p class="eyebrow blue">Retail team walkthrough</p>
+<h2 class="display" id="mirror-guide-title">See the mirror in motion.</h2>
+</div>
+<p>A short, captioned walkthrough makes the enterprise journey concrete before a store commits to a trial.</p>
+</div>
+<div class="tutorial-grid">
+<article class="tutorial-card">
+<video controls preload="metadata" playsinline src="assets/aura-mirror-guide.mp4" aria-label="AURA Smart Mirror usage tutorial"></video>
+<div class="tutorial-copy">
+<p class="eyebrow blue">AURA Mirror / 00:12</p>
+<h3>Smart Mirror usage guide</h3>
+<p>Discover a product, compare the full assortment, ask for assistance and continue on mobile with QR cart sync.</p>
+</div>
+</article>
+<article class="tutorial-card">
+<video controls preload="metadata" playsinline src="assets/aura-product-film.mp4" aria-label="AURA product and fitting experience overview"></video>
+<div class="tutorial-copy">
+<p class="eyebrow blue">Decision evidence / 00:10</p>
+<h3>What the shopper sees</h3>
+<p>The same product facts, fit cues and care guidance move from the fitting room to the shopper's saved cart.</p>
+</div>
+</article>
+</div>
+</section>
+<section class="section shell" id="enterprise-how">
+<div class="section-head">
+<div>
+<p class="eyebrow blue">One system, four moments</p>
+<h2 class="display">From rail to saved cart</h2>
+</div>
+<p>The mirror supports the store journey; it does not replace associates or force customers to create an account.</p>
+</div>
+<div class="journey">
+<article class="journey-step">
+<span class="eyebrow blue">01 · Discover</span>
+<strong>Scan a rail tag</strong>
+<p>Bring available sizes, colours and related pieces onto the mirror.</p>
+</article>
+<article class="journey-step">
+<span class="eyebrow blue">02 · Explore</span>
+<strong>Build the look</strong>
+<p>Compare options without repeating the fitting-room journey.</p>
+</article>
+<article class="journey-step">
+<span class="eyebrow blue">03 · Assist</span>
+<strong>Invite an associate</strong>
+<p>Request another size while keeping the customer in context.</p>
+</article>
+<article class="journey-step">
+<span class="eyebrow blue">04 · Continue</span>
+<strong>Send via QR</strong>
+<p>Move a consented cart to the customer's phone for purchase or later review.</p>
+</article>
+</div>
+</section>
+<section class="b2b-grid mist" id="enterprise-cases">
+<article class="b2b-feature">
+<span class="number">01</span>
+<h3>Endless Aisle</h3>
+<p>Expose approved online assortment when a colour or size is not physically present. Inventory source and availability remain visible.</p>
+</article>
+<article class="b2b-feature">
+<span class="number">02</span>
+<h3>QR Cart Sync</h3>
+<p>Transfer selected products to the shopper's phone. The customer controls whether to continue as guest, sign in or leave.</p>
+</article>
+<article class="b2b-feature">
+<span class="number">03</span>
+<h3>Zero Fitting-Room Fatigue</h3>
+<p>Request items, compare styling and access product information without repeatedly leaving the fitting room.</p>
+</article>
+</section>
+<section class="section shell" id="enterprise-specs">
+<div class="spec-layout">
+<div>
+<p class="eyebrow blue">Hardware + software</p>
+<h2 class="display">Built for the retail floor.</h2>
+<p>Specifications shown are concept targets for supplier validation, not confirmed manufacturing claims.</p>
+</div>
+<div class="spec-table">
+<div class="spec-row">
+<span>Display</span>
+<strong>55-inch 4K commercial panel target</strong>
+</div>
+<div class="spec-row">
+<span>Interaction</span>
+<strong>10-point touch + camera-based AR interface</strong>
+</div>
+<div class="spec-row">
+<span>Connectivity</span>
+<strong>Ethernet / Wi-Fi · secure API integration</strong>
+</div>
+<div class="spec-row">
+<span>Commerce</span>
+<strong>Catalogue, stock, QR cart and associate requests</strong>
+</div>
+<div class="spec-row">
+<span>Installation</span>
+<strong>Site survey → integration → staff training → trial</strong>
+</div>
+<div class="spec-row">
+<span>Privacy</span>
+<strong>Explicit camera notice, session reset, configurable retention</strong>
+</div>
+<div class="spec-row">
+<span>Accessibility</span>
+<strong>Adjustable UI zone, large controls, non-AR browsing path</strong>
+</div>
+<div class="spec-row">
+<span>Support</span>
+<strong>Remote monitoring target + agreed service window</strong>
+</div>
+</div>
+</div>
+</section>
+<section class="section black">
+<div class="shell">
+<div class="section-head">
+<div>
+<p class="eyebrow blue">Implementation</p>
+<h2 class="display">A trial with a decision at the end.</h2>
+</div>
+<p>Define the baseline before installation, observe the store journey, then keep, adapt or stop based on evidence.</p>
+</div>
+<div class="journey">
+<article class="journey-step">
+<span>Week 0</span>
+<strong>Scope</strong>
+<p>Store walk, data mapping, success measures and privacy review.</p>
+</article>
+<article class="journey-step">
+<span>Day 1</span>
+<strong>Install</strong>
+<p>Hardware placement, catalogue connection and associate briefing.</p>
+</article>
+<article class="journey-step">
+<span>Days 2–13</span>
+<strong>Learn</strong>
+<p>Observe assisted use and compare with the agreed baseline.</p>
+</article>
+<article class="journey-step">
+<span>Day 14</span>
+<strong>Decide</strong>
+<p>Review evidence and agree rollout, iteration or removal.</p>
+</article>
+</div>
+</div>
+</section>
+<section class="section shell" id="enterprise-faq">
+<div class="content-grid">
+<div>
+<p class="eyebrow blue">Enterprise FAQ</p>
+<h2 class="display" style="font-size:clamp(3rem,5vw,6rem)">Before it enters your store.</h2>
+</div>
+<div class="accordion">
+<details open>
+<summary>Does the mirror replace store associates?</summary>
+<p>No. It extends the associate's product and inventory context while the associate continues to provide human styling and service.</p>
+</details>
+<details>
+<summary>What systems need to connect?</summary>
+<p>At minimum, a clean product catalogue and inventory feed. Cart, CRM and analytics connections depend on trial scope and consent design.</p>
+</details>
+<details>
+<summary>How is shopper privacy handled?</summary>
+<p>The interface discloses camera use, resets sessions, avoids facial identification and supports a browsing path without AR. Final deployment follows the retailer's legal and security review.</p>
+</details>
+<details>
+<summary>What does the 14-day trial include?</summary>
+<p>Site survey, one trial unit, configuration, staff onboarding, support and an agreed evaluation report. Commercial terms are confirmed before installation.</p>
+</details>
+</div>
+</div>
+</section>
+<section class="section blue-bg" id="enterprise-lead">
+<div class="shell lead-layout">
+<div>
+<p class="eyebrow">14-day retail trial</p>
+<h2 class="display">Put one fitting room to the test.</h2>
+<p>Tell us about the store, catalogue and question you want the trial to answer. An enterprise specialist replies within two business days.</p>
+</div>
+<form class="form-grid" data-success="Trial request received. An AURA enterprise specialist will reply within two business days.">
+<div class="field">
+<label for="b2b-name">Name</label>
+<input id="b2b-name" required autocomplete="name">
+</div>
+<div class="field">
+<label for="b2b-email">Work email</label>
+<input id="b2b-email" type="email" required autocomplete="email">
+</div>
+<div class="field">
+<label for="b2b-company">Company</label>
+<input id="b2b-company" required autocomplete="organization">
+</div>
+<div class="field">
+<label for="b2b-stores">Number of stores</label>
+<select id="b2b-stores" required>
+<option value="">Select</option>
+<option>1–5</option>
+<option>6–25</option>
+<option>26–100</option>
+<option>100+</option>
+</select>
+</div>
+<div class="field full">
+<label for="b2b-goal">What should the trial help you learn?</label>
+<textarea id="b2b-goal" placeholder="For example: whether QR cart hand-off reduces abandoned fitting-room journeys">
+</textarea>
+</div>
+<div class="field full">
+<label class="check">
+<input type="checkbox" required> I agree to be contacted about this request.</label>
+<button class="btn btn-light" type="submit">Request Trial <span class="arrow">→</span>
+</button>
+</div>
+</form>
+</div>
+</section>
+</section>
+
+    <section class="page" id="about" data-title="About AURA">
+<div class="section shell content-grid">
+<div>
+<p class="eyebrow blue">About AURA</p>
+<h1 class="display">A more continuous way to meet clothes.</h1>
+<p class="lead">AURA exists because online and in-store fashion still feel like separate systems. We design one decision language across both.</p>
+<p>For shoppers, the browser-based fitting layer brings proportion and colour into context. For retailers, the Smart Mirror carries catalogue, inventory and cart continuity onto the shop floor. In both places, the technology stays optional, understandable and subordinate to the garment.</p>
+<a class="btn btn-shop" href="#brand" data-route="brand">View brand system →</a>
+</div>
+<div class="about-visual">
+<img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=1300&q=84" alt="AURA team's edited collection in a bright design studio">
+<span class="caption">Budapest concept studio · 2026</span>
+</div>
+</div>
+<section class="section mist">
+<div class="shell">
+<div class="section-head">
+<div>
+<p class="eyebrow blue">What guides us</p>
+<h2 class="display">Human before hardware.</h2>
+</div>
+</div>
+<div class="values">
+<article class="value">
+<h3>Clarity</h3>
+<p>A person should know what we offer, why it helps and what to do next within five seconds.</p>
+</article>
+<article class="value">
+<h3>Consent</h3>
+<p>Camera and data choices are explicit. A normal shopping route always remains.</p>
+</article>
+<article class="value">
+<h3>Continuity</h3>
+<p>Products, carts and service language should travel cleanly from screen to store.</p>
+</article>
+</div>
+</div>
+</section>
+<section class="section shell">
+<div class="section-head">
+<div>
+<p class="eyebrow blue">Concept team</p>
+<h2 class="display">Small by design.</h2>
+</div>
+<p>Team imagery and roles for the academic prototype. Replace with the founding team before launch.</p>
+</div>
+<div class="team">
+<article class="person">
+<img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=700&q=82" loading="lazy" alt="Portrait of AURA product lead">
+<h3>Minh Tran</h3>
+<p>Product &amp; customer experience</p>
+</article>
+<article class="person">
+<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=82" loading="lazy" alt="Portrait of AURA retail technology lead">
+<h3>Alex Novak</h3>
+<p>Retail systems &amp; partnerships</p>
+</article>
+<article class="person">
+<img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=82" loading="lazy" alt="Portrait of AURA brand lead">
+<h3>Linh Pham</h3>
+<p>Editorial &amp; brand direction</p>
+</article>
+</div>
+</section>
+</section>
+
+    <section class="page" id="journal" data-title="Journal — AURA">
+<div class="page-hero shell">
+<p class="eyebrow blue">Journal / ideas in motion</p>
+<h1 class="display">Wear, interface, store.</h1>
+<p>Fashion editorials, styling guidance and useful thinking about virtual try-on and connected retail.</p>
+</div>
+<section class="section shell">
+<div class="journal-grid">
+<a class="article-card" href="#product" data-route="product">
+<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1300&q=82" alt="Fashion studio rail for the AURA capsule">
+<small>Fashion editorial · 8 min</small>
+<h2>The five-piece wardrobe, viewed in context</h2>
+<p>How proportion, repetition and honest product information support more deliberate choices.</p>
+</a>
+<a class="article-card" href="#tryon" data-modal="film-modal">
+<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=82" alt="Shopper using digital tools">
+<small>Virtual try-on · 6 min</small>
+<h3>What AR can tell you—and what it cannot</h3>
+</a>
+<a class="article-card" href="#enterprise" data-route="enterprise">
+<img src="https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?auto=format&fit=crop&w=800&q=82" alt="Modern apparel retail environment">
+<small>Retail systems · 7 min</small>
+<h3>A fitting room is part of the checkout</h3>
+</a>
+</div>
+</section>
+</section>
+
+    <section class="page" id="contact" data-title="Contact AURA">
+<div class="page-hero shell">
+<p class="eyebrow blue">Contact</p>
+<h1 class="display">Start with who you are.</h1>
+<p>One contact page, three clearly routed conversations.</p>
+</div>
+<section class="section shell contact-layout">
+<div>
+<div class="hello-video">
+<video controls preload="metadata" playsinline src="assets/aura-hello.mp4" aria-label="Hello from the AURA team video"></video>
+<button class="play" data-modal="hello-modal" aria-label="Play hello from the AURA team">▶</button>
+<div class="video-copy">
+<p class="eyebrow">01:08 · captions + audio controls</p>
+<h2 class="display">Hello from us.</h2>
+</div>
+</div>
+<h2 class="serif" style="font-size:2.2rem">AURA connects fashion choices across screen and store.</h2>
+<p>Shopper questions go to customer care. Retail enquiries go to the Smart Mirror team. Partnership notes go to business development. We normally reply within two business days.</p>
+<p>
+<strong>Email</strong>
+<br>hello@aura-fashion.example</p>
+<p>
+<strong>Social</strong>
+<br>
+<a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a> · <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+</p>
+<div class="contact-team" aria-label="AURA contact team">
+<img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=160&q=76" alt="Minh from product and customer experience">
+<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&q=76" alt="Alex from retail systems">
+<img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=160&q=76" alt="Linh from brand and partnerships">
+</div>
+<a class="link-arrow" href="#help" data-route="help">Check FAQ first →</a>
+</div>
+<form class="contact-form form-grid" data-success="Thanks — your message has been routed to the right AURA team.">
+<div class="field full">
+<label for="contact-role">I am a</label>
+<select id="contact-role" required>
+<option value="">Choose one</option>
+<option>Shopper</option>
+<option>Retailer</option>
+<option>Partner</option>
+<option>Other</option>
+</select>
+</div>
+<div class="field">
+<label for="contact-name">Name</label>
+<input id="contact-name" required autocomplete="name">
+</div>
+<div class="field">
+<label for="contact-email">Email</label>
+<input id="contact-email" type="email" required autocomplete="email">
+</div>
+<div class="field full">
+<label for="contact-topic">Topic</label>
+<select id="contact-topic" required>
+<option value="">Select a topic</option>
+<option>Order or return</option>
+<option>Product and sizing</option>
+<option>Smart Mirror trial</option>
+<option>Press or partnership</option>
+</select>
+</div>
+<div class="field full">
+<label for="contact-message">Message</label>
+<textarea id="contact-message" required placeholder="Include an order number if your question is about a purchase.">
+</textarea>
+</div>
+<div class="field full">
+<label class="check">
+<input type="checkbox" required> I agree to AURA using these details to answer my request.</label>
+<button class="btn btn-shop" type="submit">Send message →</button>
+<p class="form-note" style="color:var(--muted)">Expected response: within two business days. This prototype validates the form and demonstrates routing; it does not send data to a live inbox.</p>
+</div>
+</form>
+</section>
+</section>
+
+    <section class="page" id="help" data-title="Help & Policies — AURA">
+<div class="page-hero shell">
+<p class="eyebrow blue">Support / operational pages</p>
+<h1 class="display">Clear answers, before checkout.</h1>
+</div>
+<section class="section shell help-layout">
+<nav class="help-nav" aria-label="Help topics">
+<button class="active" data-help="faq">FAQ</button>
+<button data-help="shipping">Shipping</button>
+<button data-help="returns">Returns</button>
+<button data-help="size">Size &amp; care</button>
+<button data-help="privacy">Privacy</button>
+<button data-help="terms">Terms</button>
+</nav>
+<div>
+<article class="help-panel active" id="help-faq">
+<h2 class="display">Frequently asked questions</h2>
+<div class="accordion">
+<details open>
+<summary>Do I need an app for Live Try-On?</summary>
+<p>No. It opens in a supported mobile or desktop browser. Camera access is requested only when you start the experience.</p>
+</details>
+<details>
+<summary>Can I shop without using my camera?</summary>
+<p>Yes. Product imagery, video, garment measurements, the size guide and checkout all work without Live Try-On.</p>
+</details>
+<details>
+<summary>How accurate is the view?</summary>
+<p>It is a directional styling and proportion tool, not a made-to-measure guarantee. Always compare garment measurements before choosing a size.</p>
+</details>
+<details>
+<summary>How can a retailer test the Smart Mirror?</summary>
+<p>Open Enterprise from the main navigation, review the process and submit the 14-day trial form.</p>
+</details>
+</div>
+</article>
+<article class="help-panel" id="help-shipping">
+<h2 class="display">Shipping information</h2>
+<h3>Tracked delivery</h3>
+<p>Estimated delivery dates appear on each product page and again at checkout. Complimentary standard delivery applies to orders above $150. Duties and taxes are shown before payment where supported.</p>
+<h3>Order updates</h3>
+<p>After confirmation, customers receive an order reference and tracking link. Contact support if a parcel has not moved for three working days.</p>
+</article>
+<article class="help-panel" id="help-returns">
+<h2 class="display">Return policy</h2>
+<h3>30 days to decide</h3>
+<p>Return unworn items with original tags within 30 days of delivery. Start the return online, choose a reason and use the provided label where available. Refunds return to the original payment method after inspection.</p>
+<h3>Exceptions</h3>
+<p>Personalised pieces, hygiene-sensitive items and visibly worn garments cannot be returned unless faulty. Statutory rights remain unaffected.</p>
+</article>
+<article class="help-panel" id="help-size">
+<h2 class="display">Size, use &amp; care</h2>
+<h3>Measure first</h3>
+<p>Compare bust, waist, hip and garment length with a similar piece you own. Live Try-On adds visual context but does not replace the measurement table.</p>
+<h3>Make it last</h3>
+<p>Follow the care label, air garments between wears and use the repair details supplied on each product page.</p>
+</article>
+<article class="help-panel" id="help-privacy">
+<h2 class="display">Privacy</h2>
+<h3>Camera choice</h3>
+<p>Live Try-On requires explicit browser permission. This academic prototype does not upload, identify or store camera imagery. A future commercial version would require a published retention policy, processor list and regional legal review.</p>
+<h3>Contact and checkout data</h3>
+<p>Forms in this prototype validate locally and display a success state only. No submission is sent to a database.</p>
+</article>
+<article class="help-panel" id="help-terms">
+<h2 class="display">Terms</h2>
+<p>This website is a concept prototype for academic evaluation. Product availability, prices, reviews, team profiles, hardware specifications and trial terms are illustrative until verified for a commercial launch.</p>
+<p>The interface must not be used to infer body measurements, identity, health or protected characteristics.</p>
+</article>
+</div>
+</section>
+</section>
+
+    <section class="page brand-board" id="brand" data-title="AURA Brand System">
+<div class="page-hero shell">
+<p class="eyebrow blue">Brand board / 2026</p>
+<h1 class="display">Fashion, fitted to reality.</h1>
+<p>One editorial identity. Two action languages: blue for technology, black for commerce.</p>
+</div>
+<section class="section shell">
+<div class="logo-showcase">
+<div class="logo-sample">
+<a class="logo big-logo">
+<span class="logo-mark">A</span>
+<span>AURA</span>
+</a>
+</div>
+<div class="logo-sample dark">
+<a class="logo big-logo">
+<span class="logo-mark">A</span>
+<span>AURA</span>
+</a>
+</div>
+</div>
+<p>
+<strong>Logo rule:</strong> keep clear space equal to the symbol width. Minimum digital width: 96 px. Use the wordmark or the A symbol; never add effects, stretch it or place it on a low-contrast image. The system is simple, memorable, timeless, versatile and appropriate for clothing, screens and retail hardware.</p>
+</section>
+<section class="palette" aria-label="AURA colour palette">
+<div class="color" style="background:#fff">
+<strong>Crisp White</strong>
+<span>#FFFFFF · base</span>
+</div>
+<div class="color" style="background:#f8f9fa">
+<strong>Soft Gray</strong>
+<span>#F8F9FA · surface</span>
+</div>
+<div class="color" style="background:#212529">
+<strong>Charcoal</strong>
+<span>#212529 · text</span>
+</div>
+<div class="color" style="background:#050505">
+<strong>Jet Black</strong>
+<span>#050505 · commerce</span>
+</div>
+<div class="color" style="background:#0055ff">
+<strong>Electric Blue</strong>
+<span>#0055FF · technology</span>
+</div>
+<div class="color" style="background:#dde2e7;color:#212529">
+<strong>Tech Silver</strong>
+<span>#DDE2E7 · borders</span>
+</div>
+</section>
+<section class="section shell">
+<div class="type-show">
+<article class="type-card">
+<p class="eyebrow blue">Editorial / DM Serif Display</p>
+<div class="sample serif">Aa</div>
+<p>Campaign headlines, key ideas and fashion-led moments. Generous line height and sentence case preserve elegance.</p>
+</article>
+<article class="type-card">
+<p class="eyebrow blue">Interface / Inter</p>
+<div class="sample">Aa</div>
+<p>Navigation, product facts, forms, controls and body copy. Designed for clarity from phone to 55-inch display.</p>
+</article>
+</div>
+<div class="section-head" style="margin-top:5rem">
+<div>
+<p class="eyebrow blue">Design elements + voice</p>
+<h2 class="display">Editorial × spatial.</h2>
+</div>
+<p>Asymmetry, large photography, slim borders, visible grid logic and functional floating interface fragments. Avoid generic SaaS card walls, decorative gradients and technology clip art.</p>
+</div>
+<div class="voice-grid">
+<article class="voice-card">
+<h3>Clear</h3>
+<p>Say “Open your camera” rather than “Activate an immersive experience.”</p>
+</article>
+<article class="voice-card">
+<h3>Human</h3>
+<p>Explain the benefit before the technology and give the user an exit.</p>
+</article>
+<article class="voice-card">
+<h3>Precise</h3>
+<p>Label concept targets and prototype evidence; never invent performance claims.</p>
+</article>
+</div>
+</section>
+</section>
+
+    <section class="page" id="cart" data-title="Your Cart — AURA">
+<div class="page-hero shell">
+<p class="eyebrow blue">Bag</p>
+<h1 class="display">Your edit.</h1>
+</div>
+<div class="shell" id="cart-content">
+</div>
+</section>
+    <section class="page" id="checkout" data-title="Secure Checkout — AURA">
+<div class="page-hero shell">
+<p class="eyebrow blue">Secure checkout</p>
+<h1 class="display">Finish clearly.</h1>
+</div>
+<div class="shell checkout-layout">
+<form class="contact-form" id="checkout-form">
+<h2 class="serif">Delivery</h2>
+<div class="form-grid">
+<div class="field">
+<label for="co-first">First name</label>
+<input id="co-first" required autocomplete="given-name">
+</div>
+<div class="field">
+<label for="co-last">Last name</label>
+<input id="co-last" required autocomplete="family-name">
+</div>
+<div class="field full">
+<label for="co-email">Email</label>
+<input id="co-email" type="email" required autocomplete="email">
+</div>
+<div class="field full">
+<label for="co-address">Address</label>
+<input id="co-address" required autocomplete="street-address">
+</div>
+<div class="field">
+<label for="co-city">City</label>
+<input id="co-city" required autocomplete="address-level2">
+</div>
+<div class="field">
+<label for="co-post">Postal code</label>
+<input id="co-post" required autocomplete="postal-code">
+</div>
+</div>
+<h2 class="serif" style="margin-top:3rem">Payment</h2>
+<div class="payment-tabs">
+<button type="button" class="active">Card</button>
+<button type="button">Digital wallet</button>
+</div>
+<div class="form-grid">
+<div class="field full">
+<label for="co-card">Card number</label>
+<input id="co-card" inputmode="numeric" placeholder="4242 4242 4242 4242" required>
+</div>
+<div class="field">
+<label for="co-expiry">Expiry</label>
+<input id="co-expiry" placeholder="MM / YY" required>
+</div>
+<div class="field">
+<label for="co-cvc">CVC</label>
+<input id="co-cvc" inputmode="numeric" required>
+</div>
+<div class="field full">
+<button class="btn btn-shop" type="submit">Place prototype order →</button>
+<p class="form-note" style="color:var(--muted)">Academic prototype: no payment is processed or stored.</p>
+</div>
+</div>
+</form>
+<aside class="order-box" id="checkout-summary">
+</aside>
+</div>
+</section>
+
+    <section class="page" id="confirmation" data-title="Order Confirmed — AURA">
+<div class="empty shell">
+<p class="eyebrow blue">Order AUR-2026-0912</p>
+<h1 class="display" style="font-size:clamp(4rem,8vw,8rem)">Your edit is confirmed.</h1>
+<p>A confirmation summary has been prepared for <strong id="confirmation-email">your email</strong>. In this prototype, no email or payment was actually sent.</p>
+<a class="btn btn-shop" href="#home" data-route="home">Return home →</a>
+</div>
+</section>
+
+    <section class="page" id="rationale" data-title="AURA UX Rationale">
+<div class="page-hero shell">
+<p class="eyebrow blue">Evaluator view / UX strategy</p>
+<h1 class="display">Two journeys. One system.</h1>
+<p>A transparent map of purpose, hierarchy, CTA logic and launch readiness.</p>
+</div>
+<section class="section shell">
+<div class="rationale-grid">
+<article class="rationale-card">
+<p class="eyebrow blue">B2C persona</p>
+<h3>The confidence-seeking shopper</h3>
+<p>Needs to understand silhouette and fit without downloading an app. Primary action: try, compare and buy.</p>
+<div class="flow">
+<span>Home</span>
+<b>→</b>
+<span>Category</span>
+<b>→</b>
+<span>Product</span>
+<b>→</b>
+<span>Live Try-On</span>
+<b>→</b>
+<span>Cart</span>
+<b>→</b>
+<span>Checkout</span>
+</div>
+</article>
+<article class="rationale-card">
+<p class="eyebrow blue">B2B persona</p>
+<h3>The evidence-led retail manager</h3>
+<p>Needs business value, integration clarity and a bounded test. Primary action: request a demo or 14-day trial.</p>
+<div class="flow">
+<span>Home</span>
+<b>→</b>
+<span>Enterprise</span>
+<b>→</b>
+<span>How it works</span>
+<b>→</b>
+<span>Specs / FAQ</span>
+<b>→</b>
+<span>Trial</span>
+</div>
+</article>
+<article class="rationale-card">
+<p class="eyebrow blue">Five-second Grunt Test</p>
+<h3>Offer → benefit → action</h3>
+<p>Above the fold shows premium fashion plus browser-based try-on, explains decision confidence and gives a blue “Shop &amp; Try On” action. Enterprise uses a dedicated mode with its own subnavigation.</p>
+</article>
+<article class="rationale-card">
+<p class="eyebrow blue">Three-click rule</p>
+<h3>Every support page stays close</h3>
+<p>Shop, enterprise, help, contact, journal and policies are reachable from the global navigation or footer in no more than three clicks. Transaction steps remain linear by design.</p>
+</article>
+</div>
+</section>
+<section class="section shell" aria-labelledby="architecture-title">
+<div class="section-head">
+<div>
+<p class="eyebrow blue">Website structure / hierarchy</p>
+<h2 class="display" id="architecture-title">Every important page has a place.</h2>
+</div>
+<p>The structure keeps the retail funnel, enterprise funnel and support content visible without mixing their next actions. Key destinations remain within three clicks of Home.</p>
+</div>
+<div class="architecture-map">
+<div class="architecture-root">HOME / AURA</div>
+<article class="architecture-branch">
+<p class="eyebrow blue">B2C / Shop</p>
+<h3>Discover → try → buy</h3>
+<ul>
+<li><a href="#category" data-route="category" data-catalog="women">Women</a> · <a href="#category" data-route="category" data-catalog="men">Men</a></li>
+<li><a href="#category" data-route="category" data-catalog="new">New Arrivals</a> · <a href="#category" data-route="category" data-catalog="accessories">Accessories</a></li>
+<li><a href="#product" data-route="product" data-product="Ivory &amp; Taupe Co-ord">Product detail</a> → Live Try-On</li>
+<li><a href="#cart" data-route="cart">Cart</a> → <a href="#checkout" data-route="checkout">Checkout</a> → confirmation</li>
+</ul>
+</article>
+<article class="architecture-branch">
+<p class="eyebrow blue">B2B / Enterprise</p>
+<h3>Understand → evaluate → trial</h3>
+<ul>
+<li><a href="#enterprise" data-route="enterprise">Smart Mirror solution</a></li>
+<li><a href="#enterprise-how" data-route="enterprise" data-after="enterprise-how">How it works</a> · retail use cases</li>
+<li>Technology · hardware specifications · privacy</li>
+<li><a href="#enterprise-lead" data-route="enterprise" data-after="enterprise-lead">Request demo / book 14-day trial</a></li>
+</ul>
+</article>
+<article class="architecture-branch">
+<p class="eyebrow blue">Brand / Help</p>
+<h3>Trust → learn → contact</h3>
+<ul>
+<li><a href="#about" data-route="about">About AURA</a> · Brand system</li>
+<li><a href="#journal" data-route="journal">Journal / editorial</a> · technology education</li>
+<li><a href="#contact" data-route="contact">Contact</a> · shopper / retailer routing</li>
+<li><a href="#help" data-route="help">FAQ</a> · shipping · returns · privacy · terms</li>
+</ul>
+</article>
+</div>
+</section>
+<section class="section mist">
+<div class="shell">
+<div class="section-head">
+<div>
+<p class="eyebrow blue">Coverage audit</p>
+<h2 class="display">Rubric, made visible.</h2>
+</div>
+</div>
+<table class="audit">
+<thead>
+<tr>
+<th>Requirement</th>
+<th>Implementation</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Purpose, CTA, interaction</td>
+<td>Separate B2C purchase and B2B trial funnels with functional controls</td>
+<td class="status-implemented">Implemented</td>
+</tr>
+<tr>
+<td>Pages, posts, sidebar, media</td>
+<td>Home, category, PDP, journal, filter sidebar, imagery and playable tutorial videos</td>
+<td class="status-implemented">Implemented</td>
+</tr>
+<tr>
+<td>Key pages</td>
+<td>About, product, checkout, FAQ, shipping, returns, contact, privacy, terms</td>
+<td class="status-implemented">Implemented</td>
+</tr>
+<tr>
+<td>Homepage trust</td>
+<td>Clear description, focused content, credibility, labelled prototype testimonials</td>
+<td class="status-implemented">Implemented</td>
+</tr>
+<tr>
+<td>Product checklist</td>
+<td>Gallery, film, description, CTA, FAQ, shipping, use/care, reviews, stock, responsive layout</td>
+<td class="status-implemented">Implemented</td>
+</tr>
+<tr>
+<td>SEO content</td>
+<td>Long-form helpful collection guide below product browsing; target phrase used naturally</td>
+<td class="status-implemented">Implemented</td>
+</tr>
+<tr>
+<td>Brand kit</td>
+<td>Logo rules, tagline, six-colour palette, serif + sans pairing, elements and voice</td>
+<td class="status-implemented">Implemented</td>
+</tr>
+<tr>
+<td>Organization</td>
+<td>Mode-specific menus, simple scalable routes and three-click access</td>
+<td class="status-implemented">Implemented</td>
+</tr>
+<tr>
+<td>Responsive + accessible</td>
+<td>Mobile drawer, adaptable grids, keyboard focus, alt text, large targets, reduced motion</td>
+<td class="status-implemented">Implemented</td>
+</tr>
+<tr>
+<td>Dynamic product routing</td>
+<td>Each card and category link opens the matching product name, image, price, colour, stock and try-on asset</td>
+<td class="status-implemented">Implemented</td>
+</tr>
+<tr>
+<td>Camera overlay</td>
+<td>Live camera or uploaded photo with garment layer, shoulder alignment, manual fit controls and local capture</td>
+<td class="status-prototype">Working prototype</td>
+</tr>
+<tr>
+<td>Marketing integrations</td>
+<td>Newsletter, social links and local form states are present; production analytics and inbox wiring still require account credentials</td>
+<td class="status-planned">Planned for launch</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="section shell">
+<div class="section-head">
+<div>
+<p class="eyebrow blue">Technical launch plan</p>
+<h2 class="display">Ready for Wix Studio.</h2>
+</div>
+<p>Use Wix Studio for the assessed Wix build, connect a custom domain after checking availability, and keep this deployed prototype as the interaction reference. Recreate the sitemap, brand tokens and page sections in Wix; the Live camera requires an HTTPS Wix preview and a Wix Velo or HTML embed component with camera permission enabled. Keep responsive AVIF/WebP images, consent-aware analytics, daily backups and regular security updates in the launch checklist.</p>
+</div>
+<div class="architecture-map" style="margin-top:2rem">
+<article class="architecture-branch">
+<p class="eyebrow blue">Proposed domain</p>
+<h3>aura-fashion-tech</h3>
+<p>Check availability in Wix before purchase, then choose the final regional extension for the class submission.</p>
+</article>
+<article class="architecture-branch">
+<p class="eyebrow blue">Prototype link</p>
+<h3 style="font-family:var(--sans);font-size:1rem;word-break:break-word">aura-spatial-fashion.truongandzwy.chatgpt.site</h3>
+<p>Use this HTTPS link to review every interaction while the Wix pages are being assembled.</p>
+</article>
+<article class="architecture-branch">
+<p class="eyebrow blue">Wix workspace</p>
+<h3>Wix Studio</h3>
+<p>Open the official Wix workspace to create the final Wix site and connect the chosen domain.</p>
+<a class="link-arrow" href="https://www.wix.com/studio" target="_blank" rel="noreferrer">Open Wix Studio →</a>
+</article>
+</div>
+</section>
+</section>
+  </main>
+
+  <footer class="footer">
+<div class="shell">
+<div class="footer-grid">
+<div>
+<a class="logo" href="#home" data-route="home">
+<span class="logo-mark">A</span>
+<span>AURA</span>
+</a>
+<h3>Fashion, fitted to reality.</h3>
+<p style="color:#9ea5aa;font-size:.82rem;max-width:280px">Premium fashion, browser-based virtual try-on and connected retail mirrors.</p>
+</div>
+<div>
+<h4>Shop</h4>
+<a href="#category" data-route="category">Women</a>
+<a href="#category" data-route="category">Men</a>
+<a href="#category" data-route="category">New Arrivals</a>
+<a href="#product" data-route="product">Featured Product</a>
+</div>
+<div>
+<h4>Enterprise</h4>
+<a href="#enterprise" data-route="enterprise">Smart Mirror</a>
+<a href="#enterprise-how" data-route="enterprise" data-after="enterprise-how">How it works</a>
+<a href="#enterprise-lead" data-route="enterprise" data-after="enterprise-lead">Book a trial</a>
+</div>
+<div>
+<h4>Company</h4>
+<a href="#about" data-route="about">About</a>
+<a href="#journal" data-route="journal">Journal</a>
+<a href="#contact" data-route="contact">Contact</a>
+<a href="#brand" data-route="brand">Brand system</a>
+</div>
+<div>
+<h4>Support</h4>
+<a href="#help" data-route="help">FAQ</a>
+<a href="#help" data-route="help" data-help-open="shipping">Shipping</a>
+<a href="#help" data-route="help" data-help-open="returns">Returns</a>
+<a href="#help" data-route="help" data-help-open="privacy">Privacy &amp; Terms</a>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© 2026 AURA. Academic concept prototype.</span>
+<a href="#rationale" data-route="rationale">UX rationale &amp; rubric audit</a>
+</div>
+</div>
+</footer>
+
+  <div class="drawer" id="mobile-drawer" aria-hidden="true">
+<div class="drawer-bg" data-close>
+</div>
+<nav class="drawer-panel" aria-label="Mobile navigation">
+<button class="icon-btn" data-close aria-label="Close menu" style="margin-left:auto">✕</button>
+<p class="eyebrow blue">Shop</p>
+<a href="#category" data-route="category" data-catalog="women">Women</a>
+<a href="#category" data-route="category" data-catalog="men">Men</a>
+<a href="#category" data-route="category" data-catalog="new">New Arrivals</a>
+<a href="#category" data-route="category" data-catalog="accessories">Accessories</a>
+<div class="drawer-divider">
+</div>
+<p class="eyebrow blue">Enterprise solutions</p>
+<a href="#enterprise" data-route="enterprise">AR Smart Mirror</a>
+<a href="#enterprise-lead" data-route="enterprise" data-after="enterprise-lead">Book 14-day trial</a>
+<div class="drawer-divider">
+</div>
+<a style="font-family:var(--sans);font-size:1rem" href="#about" data-route="about">About</a>
+<a style="font-family:var(--sans);font-size:1rem" href="#journal" data-route="journal">Journal</a>
+<a style="font-family:var(--sans);font-size:1rem" href="#contact" data-route="contact">Contact</a>
+<a style="font-family:var(--sans);font-size:1rem" href="#help" data-route="help">Help &amp; policies</a>
+</nav>
+</div>
+  <div class="modal" id="tryon-modal" aria-hidden="true">
+<div class="modal-bg" data-close>
+</div>
+<div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="tryon-title">
+<button class="modal-close" data-close aria-label="Close virtual try-on">✕</button>
+<div class="tryon-layout">
+<div class="camera" id="camera">
+<video id="camera-video" autoplay playsinline muted>
+</video>
+<img class="uploaded-photo" id="uploaded-photo" alt="Uploaded photo used locally for virtual try-on">
+<img class="garment-layer" id="garment-layer" src="assets/try-women-ivory-taupe.webp" alt="Ivory cropped shirt and taupe wide-leg trousers virtual garment overlay">
+<span class="camera-chip" id="camera-chip">LIVE · LOCAL CAMERA</span>
+<div class="camera-guide">
+</div>
+<span class="try-status" id="try-status" aria-live="polite">Garment aligned · adjust fit on the right</span>
+<div class="camera-placeholder">
+<h3 class="serif" style="font-size:2rem">Camera is off</h3>
+<p>Start your camera or upload a full-body photo. The selected outfit will appear as an adjustable layer.</p>
+</div>
+<canvas id="capture-canvas" hidden></canvas>
+</div>
+<div class="tryon-controls">
+<p class="eyebrow blue">AURA Live / interactive fitting</p>
+<h2 class="display" id="tryon-title">Try the Ivory &amp; Taupe Set.</h2>
+<p>Stand in even light with your full body visible. Choose a look, then adjust its size and vertical position until the shoulders and waist align.</p>
+<div class="try-pieces" aria-label="Choose an outfit">
+<button class="try-piece active" data-try-name="Ivory &amp; Taupe Co-ord" data-try-asset="assets/try-women-ivory-taupe.webp"><span>Women</span>Ivory + taupe · $129</button>
+<button class="try-piece" data-try-name="Sand Layering Blazer" data-try-asset="assets/try-men-sand-blazer.webp"><span>Men</span>Sand blazer · $119</button>
+<button class="try-piece" data-try-name="Stone Open-Collar Set" data-try-asset="assets/try-men-stone-knit.webp"><span>Men</span>Stone knit · $109</button>
+</div>
+<button class="btn btn-tech" id="start-camera">Start camera →</button>
+<div class="fit-controls"><label class="range-field">Garment size <input id="garment-scale" type="range" min="70" max="145" value="100" aria-label="Garment size"></label><label class="range-field">Move up / down <input id="garment-y" type="range" min="-120" max="160" value="0" aria-label="Move garment vertically"></label><label class="range-field">Move left / right <input id="garment-x" type="range" min="-120" max="120" value="0" aria-label="Move garment horizontally"></label></div>
+<p class="camera-live-help">When the camera is live, the local pose helper follows visible shoulders and hips so the transparent garment layer moves with you. Use the sliders for a final visual adjustment.</p>
+<div class="try-tools"><button type="button" id="flip-camera">Flip camera</button><button type="button" id="reset-fit">Reset fit</button><button type="button" id="capture-look" disabled>Capture look</button><label for="photo-upload">Upload photo<input class="sr" id="photo-upload" type="file" accept="image/*"></label></div>
+<p class="camera-error" id="camera-error" aria-live="assertive"></p>
+<div class="capture-preview" id="capture-preview"><div><img id="captured-look" alt="Captured virtual try-on preview"><div><strong>Your look is ready.</strong><p class="try-help">Saved only in this browser session.</p><a class="link-arrow" id="download-look" download="aura-virtual-look.png">Download image →</a></div></div></div>
+<button class="btn btn-outline" data-close style="margin-top:.7rem">Return to product</button>
+<p class="privacy-note" style="color:var(--muted)">Your live camera and uploaded photo stay on this device. They are never sent to AURA.</p>
+</div>
+</div>
+</div>
+</div>
+  <div class="modal" id="film-modal" aria-hidden="true">
+<div class="modal-bg" data-close>
+</div>
+<div class="modal-card black" role="dialog" aria-modal="true" aria-labelledby="film-title" style="padding:clamp(3rem,8vw,7rem);text-align:center">
+<button class="modal-close" data-close aria-label="Close film">✕</button>
+<p class="eyebrow blue">Product film · 00:10</p>
+<h2 class="display" id="film-title" style="font-size:clamp(3rem,6vw,6rem);margin:.5rem">Why this blazer earns its place.</h2>
+<video controls preload="metadata" playsinline src="assets/aura-product-film.mp4" aria-label="AURA product film showing why the sand layering blazer earns its place" style="display:block;width:min(760px,100%);margin:1.5rem auto;background:#111"></video>
+<p style="color:#c2c8cc;max-width:650px;margin:1.5rem auto">A short captioned product film shows the silhouette, layering logic, material notes and repair details before the shopper chooses a size.</p>
+<button class="btn btn-light" data-close>Read product details →</button>
+</div>
+</div>
+  <div class="modal" id="hello-modal" aria-hidden="true">
+<div class="modal-bg" data-close>
+</div>
+<div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="hello-title" style="padding:clamp(3rem,8vw,7rem);text-align:center">
+<button class="modal-close" data-close aria-label="Close hello video">✕</button>
+<p class="eyebrow blue">Hello from us · 00:10</p>
+<h2 class="display" id="hello-title" style="font-size:clamp(3rem,6vw,6rem);margin:.5rem">We design the hand-off.</h2>
+<video controls preload="metadata" playsinline src="assets/aura-hello.mp4" aria-label="Hello from the AURA team video" style="display:block;width:min(760px,100%);margin:1.5rem auto;background:#0055ff"></video>
+<p style="max-width:650px;margin:1.5rem auto">AURA began with a simple observation: finding a piece online, trying it in a store and deciding later should feel like one continuous conversation. We design the moments between those actions clearly, privately and with room for human judgment.</p>
+<button class="btn btn-shop" data-close>Meet the team →</button>
+</div>
+</div>
+  <div class="modal" id="search-modal" aria-hidden="true">
+<div class="modal-bg" data-close>
+</div>
+<div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="search-title" style="padding:3rem">
+<button class="modal-close" data-close aria-label="Close search">✕</button>
+<p class="eyebrow blue">Search AURA</p>
+<h2 class="display" id="search-title" style="font-size:3.5rem;margin:.3rem 0 1rem">What are you looking for?</h2>
+<form class="newsletter-form" id="search-form">
+<input id="search-input" placeholder="Try “blazer”, “returns” or “Smart Mirror”" aria-label="Search query">
+<button>Search →</button>
+</form>
+<div id="search-results" style="margin-top:2rem">
+</div>
+</div>
+</div>
+  <div class="modal" id="profile-modal" aria-hidden="true">
+<div class="modal-bg" data-close>
+</div>
+<div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="profile-title" style="padding:3rem;max-width:520px">
+<button class="modal-close" data-close aria-label="Close sign in">✕</button>
+<p class="eyebrow blue">Optional account</p>
+<h2 class="display" id="profile-title" style="font-size:3.5rem;margin:.3rem 0 1rem">Save the thread.</h2>
+<p>You can purchase as a guest. Sign in only to save looks and continue a consented cart across devices.</p>
+<form class="contact-form" data-success="Prototype sign-in link prepared. No email was sent.">
+<div class="field">
+<label for="profile-email">Email</label>
+<input id="profile-email" type="email" required>
+</div>
+<button class="btn btn-shop" type="submit" style="width:100%;margin-top:1rem">Continue by email →</button>
+</form>
+</div>
+</div>
+  <div class="toast" id="toast" role="status" aria-live="polite">
+</div>
+
+  <script>
+    const products=[
+      {slug:'sand-layering-blazer',name:'Sand Layering Blazer',price:119,cat:'outerwear',gender:'men',newArrival:true,live:true,tryAsset:'assets/try-men-sand-blazer.webp',img:'assets/try-men-sand-blazer.webp',colors:[['Sand','#c8b7a2'],['Stone','#d7cbbb'],['Ink blue','#14294b']],colorTags:['sand','taupe','charcoal'],sizes:['XS','S','M','L'],sizeTags:['small','medium'],stock:'In stock in size M · only 4 remaining',delivery:'Estimated delivery: 16–18 Sep',rating:'4.8 · 28 verified reviews',short:'Soft tailoring in a warm sand tone, with a clean shoulder and relaxed line. An elegant everyday layer at an accessible mid-market price.',description:'Single-breasted blazer in a traceable wool blend with a smooth recycled lining, internal pocket and softly padded shoulder. The elongated cut finishes below the hip.',fit:'Relaxed tailored fit. Model is 178 cm and wears S. Shell: 62% wool, 34% recycled polyester, 4% elastane. Dry clean only; air between wears.',shipping:'Tracked delivery. Return unworn pieces with original tags within 30 days. Start online and use the prepaid label where available.',tryInstructions:'Select Live Try-On, allow camera access, stand in even light and keep your full upper body visible. Close the tool at any time to purchase normally.',faq:'Need a different size or colour? Use the size guide, compare garment measurements and contact the shopper team before ordering. The virtual view is directional and never replaces the measurement table.',whyTitle:'Structure without stiffness',whyCopy:'A light canvas gives the blazer a defined line while the back vent and stretch blend keep movement natural.',detail1:'https://images.unsplash.com/photo-1548883354-94bcfe321cbb?auto=format&fit=crop&w=800&q=82',detail2:'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=82'},
+      {slug:'ivory-taupe-co-ord',name:'Ivory & Taupe Co-ord',price:129,cat:'separates',gender:'women',newArrival:true,live:true,tryAsset:'assets/try-women-ivory-taupe.webp',img:'assets/try-women-ivory-taupe.webp',colors:[['Ivory','#f4f1e9'],['Taupe','#a99991'],['Charcoal','#303238']],colorTags:['ivory','taupe','charcoal'],sizes:['XS','S','M','L'],sizeTags:['small','medium'],stock:'In stock · sizes XS–L',delivery:'Estimated delivery: 16–18 Sep',rating:'4.7 · 19 verified reviews',short:'A clean cropped shirt and high-waist wide-leg trouser set, edited in ivory and taupe for easy everyday elegance.',description:'Two-piece co-ord with a crisp cropped shirt, softly structured waistband and fluid wide-leg trousers. Designed to be worn together or separated across the week.',fit:'Regular fit through the shirt, relaxed through the trouser. Model is 174 cm and wears S. Shell: 72% recycled polyester, 24% viscose, 4% elastane. Machine wash cold.',shipping:'Tracked delivery. Return unworn pieces with original tags within 30 days. Complimentary standard delivery above $150.',tryInstructions:'Choose Live Try-On, align your shoulders inside the guide and use the fit sliders to compare the overall proportion. Always confirm the measurement table before ordering.',faq:'The shirt and trouser are listed as one coordinated look. Choose your usual top size, then compare the trouser waist and hip measurements before checkout.',whyTitle:'One set, many quiet combinations',whyCopy:'The cropped line balances the high waist, while the neutral palette moves easily from work to weekend.',detail1:'assets/editorial-women-reference.webp',detail2:'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=82'},
+      {slug:'stone-open-collar-set',name:'Stone Open-Collar Set',price:109,cat:'knitwear',gender:'men',newArrival:true,live:true,tryAsset:'assets/try-men-stone-knit.webp',img:'assets/try-men-stone-knit.webp',colors:[['Stone','#c8c6bd'],['Cream','#e9e3d7'],['Charcoal','#3c3c3b']],colorTags:['ivory','taupe','charcoal'],sizes:['S','M','L','XL'],sizeTags:['medium','xl'],stock:'In stock · sizes S–XL',delivery:'Estimated delivery: 17–19 Sep',rating:'4.8 · 16 verified reviews',short:'An open-collar knit and easy tailored trouser set in stone and cream, made for a polished daily uniform.',description:'Soft open-collar knit paired with a clean straight trouser. The set keeps the line relaxed and minimal while remaining easy to dress up.',fit:'Relaxed fit. Model is 183 cm and wears M. Shell: 58% cotton, 38% recycled polyester, 4% elastane. Gentle wash and lay flat to dry.',shipping:'Tracked delivery. Return unworn pieces with original tags within 30 days. Duties are shown before payment.',tryInstructions:'Use the guide to line up shoulder and waist, then refine the layer with the sliders. The browser preview is directional and does not replace garment measurements.',faq:'The knit and trouser are presented as one look for try-on. Individual availability is confirmed by the product team before a commercial launch.',whyTitle:'Polished ease, kept simple',whyCopy:'The open collar frames the face and the straight trouser keeps the silhouette calm from day to evening.',detail1:'assets/editorial-men-reference.webp',detail2:'https://images.unsplash.com/photo-1506629905607-d9b1c9d3f4f2?auto=format&fit=crop&w=800&q=82'},
+      {slug:'bias-midi-dress',name:'Bias Midi Dress',price:89,cat:'dresses',gender:'women',newArrival:true,live:false,img:'https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=800&q=82',colors:[['Ivory','#f4f1e9'],['Charcoal','#303238']],colorTags:['ivory','charcoal'],sizes:['XS','S','M','L'],sizeTags:['small','medium'],stock:'In stock · sizes XS–L',delivery:'Estimated delivery: 18–20 Sep',rating:'4.6 · 12 verified reviews',short:'A fluid bias-cut midi with a clean neckline and a soft drape for understated evenings.',description:'Bias-cut midi dress with a softly curved neckline and adjustable straps. The fabric moves close to the body without feeling restrictive.',fit:'Close but fluid fit. Model is 174 cm and wears S. Shell: 100% recycled polyester. Cold hand wash.',shipping:'Tracked delivery. Return unworn pieces with original tags within 30 days.',tryInstructions:'Live Try-On is not enabled for this piece yet. Use the gallery, measurements and size guide to choose with confidence.',faq:'This piece is currently available through the standard product journey while its garment overlay is being prepared.',whyTitle:'A line that follows movement',whyCopy:'The bias cut does the visual work, keeping the neckline simple and the drape light.',detail1:'https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=82',detail2:'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=82'},
+      {slug:'softline-wide-leg-trousers',name:'Softline Wide-Leg Trousers',price:79,cat:'separates',gender:'women',newArrival:true,live:false,img:'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=82',colors:[['Taupe','#a99991'],['Charcoal','#303238']],colorTags:['taupe','charcoal'],sizes:['XS','S','M','L','XL'],sizeTags:['small','medium','xl'],stock:'In stock · sizes XS–XL',delivery:'Estimated delivery: 17–19 Sep',rating:'4.7 · 21 verified reviews',short:'A high-waist wide-leg trouser with a fluid line and enough ease for everyday movement.',description:'High-waist trouser cut with a long, clean leg and hidden front fastening. Designed to pair with the AURA cropped shirt or a simple knit.',fit:'Relaxed through the leg. Model is 174 cm and wears S. Shell: 68% viscose, 28% recycled nylon, 4% elastane. Machine wash cold.',shipping:'Tracked delivery. Return unworn pieces with original tags within 30 days.',tryInstructions:'Live Try-On is not enabled for this piece yet. Use the measurement table to compare waist, hip and inseam before ordering.',faq:'If you are between sizes, compare the waistband measurement with a trouser you already own.',whyTitle:'The trouser that edits a look',whyCopy:'A long leg and quiet waistband make the silhouette feel intentional without adding visual noise.',detail1:'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=82',detail2:'https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=800&q=82'},
+      {slug:'everyday-sand-trench',name:'Everyday Sand Trench',price:139,cat:'outerwear',gender:'women',newArrival:false,live:false,img:'https://images.unsplash.com/photo-1539533018447-63fcce2678e3?auto=format&fit=crop&w=800&q=82',colors:[['Sand','#c8b7a2'],['Charcoal','#303238']],colorTags:['sand','charcoal'],sizes:['XS','S','M','L'],sizeTags:['small','medium'],stock:'In stock · sizes XS–L',delivery:'Estimated delivery: 18–21 Sep',rating:'4.8 · 31 verified reviews',short:'A light sand trench with a clean shoulder, generous movement and an everyday mid-market price.',description:'Single-breasted trench with a softly structured shoulder, adjustable cuff and removable belt. The fabric is light enough for transitional weather.',fit:'Relaxed fit with room to layer. Model is 176 cm and wears S. Shell: 65% recycled polyester, 35% cotton. Dry clean.',shipping:'Tracked delivery. Return unworn pieces with original tags within 30 days.',tryInstructions:'Live Try-On is not enabled for this piece yet. Compare the sleeve and length measurements with a coat you already own.',faq:'The belt can be worn loose or tied. The garment measurements include the intended layering ease.',whyTitle:'A calm outer layer',whyCopy:'The sand tone and clean shoulder make it useful across weekday tailoring and weekend denim.',detail1:'https://images.unsplash.com/photo-1539533018447-63fcce2678e3?auto=format&fit=crop&w=800&q=82',detail2:'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=82'},
+      {slug:'crescent-shoulder-bag',name:'Crescent Shoulder Bag',price:75,cat:'accessories',gender:'women',newArrival:false,live:false,img:'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=82',colors:[['Taupe','#a99991'],['Charcoal','#303238']],colorTags:['taupe','charcoal'],sizes:['ONE'],sizeTags:['medium'],stock:'In stock · limited edit',delivery:'Estimated delivery: 16–18 Sep',rating:'4.6 · 14 verified reviews',short:'A compact crescent bag with a considered curve and enough room for the daily essentials.',description:'Soft crescent shoulder bag with an adjustable strap, zipped top and recycled lining.',fit:'One size. Wipe clean with a soft cloth and store in the supplied dust bag.',shipping:'Tracked delivery. Return unused accessories with original packaging within 30 days.',tryInstructions:'Live Try-On is not enabled for accessories. Use the detail images and dimensions to compare scale.',faq:'The strap length is adjustable. Dimensions are listed in the product measurements at launch.',whyTitle:'Quiet function',whyCopy:'The curved profile sits close to the body and keeps the finish clean from day to evening.',detail1:'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=82',detail2:'https://images.unsplash.com/photo-1594223274512-ad4803739b7d?auto=format&fit=crop&w=800&q=82'},
+      {slug:'silk-touch-scarf',name:'Silk Touch Scarf',price:35,cat:'accessories',gender:'unisex',newArrival:false,live:false,img:'https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=800&q=82',colors:[['Ivory','#f4f1e9'],['Taupe','#a99991'],['Charcoal','#303238']],colorTags:['ivory','taupe','charcoal'],sizes:['ONE'],sizeTags:['medium'],stock:'In stock · three neutral tones',delivery:'Estimated delivery: 16–18 Sep',rating:'4.7 · 9 verified reviews',short:'A light silk-touch scarf in three neutral tones, finished for easy everyday styling.',description:'Square scarf with a smooth hand feel and a softly rolled edge. Fold, drape or tie it to change the proportion of a minimal look.',fit:'One size. Hand wash cold and air dry flat.',shipping:'Tracked delivery. Return unused accessories with original packaging within 30 days.',tryInstructions:'Live Try-On is not enabled for accessories. Use the styling notes and product dimensions to compare scale.',faq:'The scarf is one size and can be styled several ways. Colour may appear different under warm indoor light.',whyTitle:'The smallest finishing move',whyCopy:'A soft neutral accent adds texture without competing with the rest of the look.',detail1:'https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=800&q=82',detail2:'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=82'}
+    ];
+    let storedCart=[];try{const parsed=JSON.parse(localStorage.getItem('aura-cart')||'[]');if(Array.isArray(parsed))storedCart=parsed}catch(_){localStorage.removeItem('aura-cart')}
+    const state={cart:storedCart.map(x=>{const p=products.find(product=>product.name===x.name);return p?{...x,price:p.price,img:p.img}:x}),cameraStream:null,cameraRequest:0,facingMode:'user',pose:null,poseRaf:null,poseBusy:false,activeProduct:products[0],catalogPreset:'new'};
+    const $=(s,c=document)=>c.querySelector(s), $$=(s,c=document)=>[...c.querySelectorAll(s)];
+    function productCard(p){return `<article class="product-card" data-product="${p.slug}" data-cat="${p.cat}" data-gender="${p.gender}" data-new="${p.newArrival}" data-color="${p.colorTags.join(' ')}" data-size="${p.sizeTags.join(' ')}" data-live="${p.live}" data-price="${p.price}">
+<div class="product-shot">
+<button class="wish" aria-label="Save ${p.name}">♡</button>
+<a href="#product" data-route="product" data-product="${p.slug}">
+<img src="${p.img}" loading="lazy" alt="${p.name}">
+</a>${p.live?`<button class="try-badge" data-modal="tryon-modal" data-try-product="${p.name}" data-try-asset="${p.tryAsset}">● Live Try-On</button>`:''}<button class="quick" data-quick="${p.slug}">Quick view</button>
+</div>
+<div class="product-meta">
+<div>
+<h3>${p.name}</h3>
+<p>${p.live?'Live-enabled · ':''}${p.cat} · ${p.gender}</p>
+</div>
+<span class="product-price">$${p.price}.00</span>
+</div>
+</article>`}
+    $('#home-products').innerHTML=products.slice(0,4).map(productCard).join(''); $('#catalog-products').innerHTML=products.map(productCard).join(''); $('#complete-products').innerHTML=products.slice(1,4).map(productCard).join('');
+    function productByKey(key){return products.find(p=>p.slug===key||p.name===key)||products[0]}
+    function renderProduct(p){
+      state.activeProduct=p;
+      const productPage=$('#product');
+      productPage.dataset.title=p.name+' — AURA';
+      $('[data-pdp="breadcrumb"]').textContent=p.name;
+      $('[data-pdp="kicker"]').textContent=p.live?'AURA / LIVE 01':'AURA / COLLECTION 01';
+      $('[data-pdp="name"]').textContent=p.name;
+      $('[data-pdp="reviews"]').textContent=p.rating;
+      $('[data-pdp="price"]').textContent='$'+p.price+'.00';
+      $('[data-pdp="short-description"]').textContent=p.short;
+      $('[data-pdp="colour-label"]').textContent='Colour · '+p.colors[0][0];
+      $('[data-pdp="swatches"]').innerHTML=p.colors.map((c,i)=>`<button class="swatch${i===0?' active':''}" style="background:${c[1]}" aria-label="${c[0]}" title="${c[0]}"></button>`).join('');
+      $('[data-pdp="sizes"]').innerHTML=p.sizes.map((size,i)=>`<button class="size${i===Math.min(1,p.sizes.length-1)?' active':''}" type="button">${size}</button>`).join('');
+      $('[data-pdp="stock"]').innerHTML='<span class="dot"></span> '+p.stock;
+      $('[data-pdp="delivery"]').textContent=p.delivery;
+      $('[data-pdp="description"]').textContent=p.description;
+      $('[data-pdp="fit"]').textContent=p.fit;
+      $('[data-pdp="shipping"]').textContent=p.shipping;
+      $('[data-pdp="try-instructions"]').textContent=p.tryInstructions;
+      $('[data-pdp="faq"]').textContent=p.faq;
+      $('[data-pdp="main-image"]').src=p.img; $('[data-pdp="main-image"]').alt='Front view of '+p.name;
+      $('[data-pdp="detail-image-1"]').src=p.detail1||p.img; $('[data-pdp="detail-image-1"]').alt=p.name+' detail view';
+      $('[data-pdp="detail-image-2"]').src=p.detail2||p.img; $('[data-pdp="detail-image-2"]').alt=p.name+' styled detail view';
+      $('[data-pdp="film-still"]').src=p.detail1||p.img; $('[data-pdp="film-still"]').alt='Still from the '+p.name+' product film';
+      $('[data-pdp="try-button"]').dataset.tryProduct=p.name; $('[data-pdp="try-button"]').dataset.tryAsset=p.tryAsset||''; $('[data-pdp="try-button"]').style.display=p.live?'inline-flex':'none';
+      $('[data-pdp="cart-button"]').dataset.product=p.name; $('[data-pdp="cart-button"]').dataset.price=p.price;
+      $('[data-pdp="why-title"]').textContent=p.whyTitle; $('[data-pdp="why-copy"]').textContent=p.whyCopy;
+      $('#film-title').textContent='Why '+p.name+' earns its place.';
+    }
+    renderProduct(products[0]);
+    function updateCategoryCopy(){const copy={women:['Women','Elegant womenswear in ivory, taupe, sand and charcoal, from $35 to $139.'],men:['Men','Minimal menswear in stone, sand and cream, from $35 to $139.'],accessories:['Accessories','Quiet accessories in neutral tones, from $35 to $75.'],new:['New Arrivals','Elegant, minimal pieces in ivory, taupe, sand and charcoal. Mid-market pricing from $35 to $139, with selected looks available for virtual try-on.']};const info=copy[state.catalogPreset]||copy.new;$('#category-title').textContent=info[0];$('#category-breadcrumb').textContent=info[0];$('#category-description').textContent=info[1];$('#category').dataset.title=info[0]+' — AURA'}
+    function route(id,after,productKey,preset){const target=document.getElementById(id)||$('#home');if(id==='product')renderProduct(productByKey(productKey||state.activeProduct?.slug||products[0].slug));if(id==='category'){state.catalogPreset=preset||'new';if(preset)$$('[data-filter]').forEach(input=>{input.checked=false});updateCategoryCopy()}$$('.page').forEach(p=>p.classList.toggle('active',p===target));document.body.classList.toggle('enterprise-mode',id==='enterprise');document.title=target.dataset.title||'AURA';closeLayers();window.scrollTo({top:0,behavior:'auto'});history.replaceState(null,'','#'+id);setTimeout(()=>{if(after)document.getElementById(after)?.scrollIntoView({behavior:'smooth'});else target.focus?.({preventScroll:true});if(id==='category')applyFilters()},60);renderCart();}
+    document.addEventListener('click',e=>{const r=e.target.closest('[data-route]');if(r){e.preventDefault();route(r.dataset.route,r.dataset.after,r.dataset.product,r.dataset.catalog);const topic=r.dataset.helpOpen;if(topic)setTimeout(()=>openHelp(topic),80);return}const sc=e.target.closest('[data-scroll]');if(sc){e.preventDefault();const id=sc.dataset.scroll;if(!$('#enterprise').classList.contains('active'))route('enterprise',id);else document.getElementById(id)?.scrollIntoView({behavior:'smooth'});return}const m=e.target.closest('[data-modal]');if(m){e.preventDefault();openModal(m.dataset.modal);return}if(e.target.closest('[data-close]'))closeLayers();const w=e.target.closest('.wish');if(w){w.textContent=w.textContent==='♡'?'♥':'♡';toast(w.textContent==='♥'?'Saved to your edit':'Removed from saved pieces')}const sw=e.target.closest('.swatch');if(sw){$$('.swatch').forEach(x=>x.classList.remove('active'));sw.classList.add('active');const label=$('[data-pdp="colour-label"]');if(label)label.textContent='Colour · '+(sw.getAttribute('aria-label')||'Selected')}const size=e.target.closest('.size');if(size&&!size.disabled){$$('.size').forEach(x=>x.classList.remove('active'));size.classList.add('active')}const q=e.target.closest('[data-quick]');if(q){route('product',null,q.dataset.quick);return}const add=e.target.closest('.add-cart');if(add){addCart(add.dataset.product,+add.dataset.price)} });
+    function openModal(id){const m=document.getElementById(id);if(!m)return;if(id==='tryon-modal'&&!state.activeProduct?.live){const firstLive=products.find(p=>p.live);if(firstLive)selectTry(firstLive.name,firstLive.tryAsset)}m.classList.add('open');m.setAttribute('aria-hidden','false');document.body.classList.add('lock');setTimeout(()=>m.querySelector('button,input')?.focus(),100)}
+    function closeLayers(){$$('.modal.open,.drawer.open').forEach(x=>{x.classList.remove('open');x.setAttribute('aria-hidden','true')});document.body.classList.remove('lock');$('#menu-btn')?.setAttribute('aria-expanded','false');stopCamera()}
+    $('#menu-btn').addEventListener('click',()=>{const d=$('#mobile-drawer');d.classList.add('open');d.setAttribute('aria-hidden','false');document.body.classList.add('lock');$('#menu-btn').setAttribute('aria-expanded','true')});
+    function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show');clearTimeout(t.timer);t.timer=setTimeout(()=>t.classList.remove('show'),3200)}
+    function addCart(name,price){const found=state.cart.find(x=>x.name===name);if(found)found.qty++;else state.cart.push({name,price,qty:1,img:products.find(p=>p.name===name)?.img||products[0].img});saveCart();toast(name+' added to cart')}
+    function saveCart(){localStorage.setItem('aura-cart',JSON.stringify(state.cart));$('#cart-count').textContent=state.cart.reduce((a,x)=>a+x.qty,0);renderCart()}
+    function totals(){const sub=state.cart.reduce((a,x)=>a+x.price*x.qty,0);return{sub,ship:sub&&sub<150?12:0,total:sub+(sub&&sub<150?12:0)}}
+    function renderCart(){saveCountOnly();const wrap=$('#cart-content');if(!wrap)return;if(!state.cart.length){wrap.innerHTML=`<div class="empty">
+<h2 class="display" style="font-size:4rem">Your bag is open.</h2>
+<p>Explore the collection or use Live Try-On before choosing.</p>
+<a class="btn btn-shop" href="#category" data-route="category">Browse New Arrivals →</a>
+</div>`;$('#checkout-summary').innerHTML=`<h2 class="serif">Order summary</h2>
+<p>Your cart is empty.</p>`;return}const t=totals();wrap.innerHTML=`<div class="cart-layout">
+<div>
+<h2 class="serif">${state.cart.reduce((a,x)=>a+x.qty,0)} piece${state.cart.length>1?'s':''}</h2>${state.cart.map((x,i)=>`<div class="cart-item">
+<img src="${x.img}" alt="${x.name}">
+<div>
+<strong>${x.name}</strong>
+<p>Selected neutral · size M</p>
+<div class="qty">
+<button data-qty="${i}" data-delta="-1" aria-label="Decrease quantity">−</button>
+<span>${x.qty}</span>
+<button data-qty="${i}" data-delta="1" aria-label="Increase quantity">+</button>
+</div>
+<button class="text-link" data-remove="${i}" style="border:0;background:none;padding:.8rem 0">Remove</button>
+</div>
+<strong>$${x.price*x.qty}.00</strong>
+</div>`).join('')}</div>
+<aside class="order-box">
+<h2 class="serif">Order summary</h2>
+<div class="order-line">
+<span>Subtotal</span>
+<strong>$${t.sub}.00</strong>
+</div>
+<div class="order-line">
+<span>Delivery</span>
+<strong>${t.ship?'$'+t.ship+'.00':'Complimentary'}</strong>
+</div>
+<div class="order-line total">
+<span>Total</span>
+<span>$${t.total}.00</span>
+</div>
+<button class="btn btn-shop" data-route="checkout" style="width:100%;margin-top:1rem">Secure Checkout →</button>
+<p class="form-note" style="color:var(--muted)">Taxes and duties shown before payment.</p>
+</aside>
+</div>`;$('#checkout-summary').innerHTML=`<h2 class="serif">Order summary</h2>${state.cart.map(x=>`<div class="order-line">
+<span>${x.name} × ${x.qty}</span>
+<strong>$${x.price*x.qty}.00</strong>
+</div>`).join('')}<div class="order-line">
+<span>Delivery</span>
+<strong>${t.ship?'$'+t.ship+'.00':'Complimentary'}</strong>
+</div>
+<div class="order-line total">
+<span>Total</span>
+<span>$${t.total}.00</span>
+</div>`}
+    function saveCountOnly(){$('#cart-count').textContent=state.cart.reduce((a,x)=>a+x.qty,0)}
+    document.addEventListener('click',e=>{const q=e.target.closest('[data-qty]');if(q){const i=+q.dataset.qty;state.cart[i].qty+=+q.dataset.delta;if(state.cart[i].qty<1)state.cart.splice(i,1);saveCart()}const r=e.target.closest('[data-remove]');if(r){state.cart.splice(+r.dataset.remove,1);saveCart();toast('Piece removed')}});
+    $('#filter-toggle').addEventListener('click',()=>$('#filters').classList.toggle('open'));
+    function applyFilters(){
+      const selected={};$$('[data-filter]:checked').forEach(input=>{const group=input.dataset.filterGroup||'category';(selected[group]||(selected[group]=[])).push(input.dataset.filter)});
+      const preset=state.catalogPreset;let visible=0;
+      $$('#catalog-products .product-card').forEach(card=>{
+        const groupMatch=(group,value)=>!selected[group]?.length||selected[group].includes(value);
+        const categoryMatch=groupMatch('category',card.dataset.cat);
+        const techMatch=groupMatch('technology',card.dataset.live==='true'?'live':'standard');
+        const colourMatch=!selected.colour?.length||selected.colour.some(x=>card.dataset.color.split(' ').includes(x));
+        const sizeMatch=!selected.size?.length||selected.size.some(x=>card.dataset.size.split(' ').includes(x));
+        const presetMatch=preset==='new'||preset==='women'&&card.dataset.gender==='women'||preset==='men'&&card.dataset.gender==='men'||preset==='accessories'&&card.dataset.cat==='accessories';
+        const show=categoryMatch&&techMatch&&colourMatch&&sizeMatch&&presetMatch;card.style.display=show?'block':'none';if(show)visible++;
+      });
+      $('#result-count').textContent=visible+' piece'+(visible===1?'':'s');
+    }
+    $$('[data-filter]').forEach(c=>c.addEventListener('change',applyFilters));
+    $('#sort-products').addEventListener('change',e=>{const order=e.target.value;const wrap=$('#catalog-products');const cards=$$('#catalog-products .product-card');cards.sort((a,b)=>{if(order==='Price: low to high')return +a.dataset.price-+b.dataset.price;if(order==='Price: high to low')return +b.dataset.price-+a.dataset.price;if(order==='Newest')return (b.dataset.new==='true')-(a.dataset.new==='true');return products.findIndex(p=>p.slug===a.dataset.product)-products.findIndex(p=>p.slug===b.dataset.product)}).forEach(card=>wrap.appendChild(card));applyFilters()});
+    function openHelp(topic){$$('.help-nav button').forEach(b=>b.classList.toggle('active',b.dataset.help===topic));$$('.help-panel').forEach(p=>p.classList.toggle('active',p.id==='help-'+topic))}$$('.help-nav button').forEach(b=>b.addEventListener('click',()=>openHelp(b.dataset.help)));
+    $$('form[data-success]').forEach(f=>f.addEventListener('submit',e=>{e.preventDefault();if(f.checkValidity()){toast(f.dataset.success);f.reset();if(f.closest('.modal'))setTimeout(closeLayers,1200)}else f.reportValidity()}));
+    $('#checkout-form').addEventListener('submit',e=>{e.preventDefault();if(!state.cart.length){toast('Add a piece before checking out');return}if(!e.currentTarget.checkValidity()){e.currentTarget.reportValidity();return}$('#confirmation-email').textContent=$('#co-email').value;state.cart=[];saveCart();route('confirmation')});
+    $('#search-form').addEventListener('submit',e=>{e.preventDefault();const q=$('#search-input').value.toLowerCase();let routeId=q.includes('mirror')||q.includes('retail')?'enterprise':q.includes('return')||q.includes('shipping')?'help':q.includes('blazer')||q.includes('dress')?'product':'category';$('#search-results').innerHTML=`<p>
+<strong>Best match:</strong> <button class="link-arrow" data-route="${routeId}">Open ${routeId==='enterprise'?'Smart Mirror':routeId==='help'?'Help & policies':routeId==='product'?'Sand Layering Blazer':'New Arrivals'} →</button>
+</p>`});
+    const poseScript=document.createElement('script');poseScript.src='https://cdn.jsdelivr.net/npm/@mediapipe/pose@0.5/pose.js';poseScript.crossOrigin='anonymous';poseScript.async=true;document.head.appendChild(poseScript);
+    function selectTry(name,asset){const overlay=$('#garment-layer');if(asset)overlay.src=asset;overlay.alt=name+' virtual garment overlay';$('#tryon-title').textContent='Try the '+name+'.';$$('.try-piece').forEach(b=>b.classList.toggle('active',b.dataset.tryName===name));resetFit()}
+    document.addEventListener('click',e=>{const trigger=e.target.closest('[data-try-product]');if(trigger)selectTry(trigger.dataset.tryProduct,trigger.dataset.tryAsset)},true);
+    $$('.try-piece').forEach(b=>b.addEventListener('click',()=>selectTry(b.dataset.tryName,b.dataset.tryAsset)));
+    function resetPose(){const camera=$('#camera');camera?.style.setProperty('--pose-scale','1');camera?.style.setProperty('--pose-x','0px');camera?.style.setProperty('--pose-y','0px');camera?.classList.remove('pose-ready')}
+    function stopPose(){if(state.poseRaf){clearTimeout(state.poseRaf);state.poseRaf=null}state.poseBusy=false;state.pose?.close?.();state.pose=null;resetPose()}
+    function applyPose(results){const lm=results?.poseLandmarks;if(!lm)return;const left=lm[11],right=lm[12],leftHip=lm[23],rightHip=lm[24];if(!left||!right||!leftHip||!rightHip)return;if([left,right,leftHip,rightHip].some(point=>(point.visibility??1)<.42))return;const camera=$('#camera'),video=$('#camera-video'),rect=camera.getBoundingClientRect();if(!rect.width||!rect.height)return;const vw=video.videoWidth||rect.width,vh=video.videoHeight||rect.height,coverScale=Math.max(rect.width/vw,rect.height/vh),renderW=vw*coverScale,renderH=vh*coverScale,offsetX=(rect.width-renderW)/2,offsetY=(rect.height-renderH)/2;const shoulderWidth=Math.abs(left.x-right.x),centerX=(left.x+right.x)/2,centerY=(left.y+right.y)/2,displayX=state.facingMode==='user'?1-centerX:centerX,screenX=displayX*renderW+offsetX,screenY=centerY*renderH+offsetY,baseWidth=rect.width*.58,scale=Math.max(.68,Math.min(1.38,(shoulderWidth*renderW*2.38)/baseWidth)),x=screenX-rect.width/2,y=screenY-rect.height*.13;camera.style.setProperty('--pose-scale',scale.toFixed(3));camera.style.setProperty('--pose-x',Math.max(-rect.width*.25,Math.min(rect.width*.25,x)).toFixed(1)+'px');camera.style.setProperty('--pose-y',Math.max(-80,Math.min(rect.height*.3,y)).toFixed(1)+'px');camera.classList.add('pose-ready');$('#try-status').textContent='Auto-aligned to shoulders · refine below'}
+    function ensurePose(){if(state.pose||!window.Pose)return state.pose;if(!window.Pose)return null;state.pose=new window.Pose({locateFile:file=>'https://cdn.jsdelivr.net/npm/@mediapipe/pose@0.5/'+file});state.pose.setOptions({modelComplexity:0,smoothLandmarks:true,enableSegmentation:false,minDetectionConfidence:.5,minTrackingConfidence:.5});state.pose.onResults(applyPose);return state.pose}
+    function poseTick(){const video=$('#camera-video');if(!state.cameraStream||!state.pose||!video||video.readyState<2)return;if(state.poseBusy){state.poseRaf=setTimeout(poseTick,140);return}state.poseBusy=true;Promise.resolve(state.pose.send({image:video})).catch(()=>{}).finally(()=>{state.poseBusy=false});state.poseRaf=setTimeout(poseTick,140)}
+    function waitForPose(attempt=0){if(!state.cameraStream)return;if(ensurePose()){poseTick();return}if(attempt<18)setTimeout(()=>waitForPose(attempt+1),350);else $('#try-status').textContent='Outfit visible · align shoulder and waist'}
+    async function startCamera(){
+      const error=$('#camera-error'),video=$('#camera-video'),camera=$('#camera'),button=$('#start-camera');const requestId=++state.cameraRequest;error.textContent='';stopPose();
+      if(location.protocol!=='https:'&&!['localhost','127.0.0.1'].includes(location.hostname)){error.textContent='Live camera needs an HTTPS page. Open the published link or Wix HTTPS preview, or upload a full-body photo.';toast('Open the HTTPS AURA link to use Camera Live.');return}
+      if(!navigator.mediaDevices?.getUserMedia){error.textContent='Camera access is not supported here. Upload a full-body photo instead.';return}
+      button.disabled=true;button.textContent='Opening camera…';
+      try{state.cameraStream?.getTracks().forEach(t=>t.stop());state.cameraStream=null;const stream=await navigator.mediaDevices.getUserMedia({video:{facingMode:{ideal:state.facingMode},width:{ideal:1280},height:{ideal:1920}},audio:false});if(requestId!==state.cameraRequest){stream.getTracks().forEach(t=>t.stop());return}state.cameraStream=stream;video.srcObject=stream;await video.play();if(!video.videoWidth)await new Promise(resolve=>video.addEventListener('loadedmetadata',resolve,{once:true}));camera.classList.remove('photo');camera.classList.toggle('rear',state.facingMode==='environment');camera.classList.add('live');$('#uploaded-photo').removeAttribute('src');$('#camera-chip').textContent=state.facingMode==='user'?'LIVE · FRONT CAMERA':'LIVE · REAR CAMERA';button.textContent='Camera is live';$('#capture-look').disabled=false;$('#try-status').textContent='Outfit visible · finding shoulders…';$('#camera-error').textContent='';waitForPose()}catch(err){if(requestId!==state.cameraRequest)return;state.cameraStream=null;button.disabled=false;button.textContent='Start camera →';error.textContent=err.name==='NotAllowedError'?'Camera permission was blocked. Allow it in browser settings or upload a photo.':err.name==='NotFoundError'?'No camera was found. Upload a full-body photo instead.':'Camera could not start. Try another camera or upload a photo.';toast('Camera unavailable — photo upload is ready.')}}
+    $('#start-camera').addEventListener('click',startCamera);
+    $('#flip-camera').addEventListener('click',async()=>{state.facingMode=state.facingMode==='user'?'environment':'user';if(state.cameraStream){$('#start-camera').disabled=false;await startCamera()}else toast('Camera will open on the '+(state.facingMode==='user'?'front':'rear')+' lens')});
+    function resetFit(){const camera=$('#camera');$('#garment-scale').value=100;$('#garment-y').value=0;$('#garment-x').value=0;camera.style.setProperty('--garment-scale','1');camera.style.setProperty('--garment-y','0px');camera.style.setProperty('--garment-x','0px');$('#capture-preview').classList.remove('show')}
+    $('#reset-fit').addEventListener('click',resetFit);
+    $('#garment-scale').addEventListener('input',e=>$('#camera').style.setProperty('--garment-scale',String(+e.target.value/100)));
+    $('#garment-y').addEventListener('input',e=>$('#camera').style.setProperty('--garment-y',e.target.value+'px'));
+    $('#garment-x').addEventListener('input',e=>$('#camera').style.setProperty('--garment-x',e.target.value+'px'));
+    $('#photo-upload').addEventListener('change',e=>{const file=e.target.files?.[0];if(!file)return;const error=$('#camera-error');if(!file.type.startsWith('image/')){error.textContent='Please choose an image file.';return}if(file.size>12*1024*1024){error.textContent='Please choose a photo smaller than 12 MB.';return}const reader=new FileReader();reader.onload=()=>{++state.cameraRequest;stopPose();state.cameraStream?.getTracks().forEach(t=>t.stop());state.cameraStream=null;const photo=$('#uploaded-photo');photo.onload=()=>{$('#camera').classList.remove('live','rear');$('#camera').classList.add('photo');$('#start-camera').disabled=false;$('#start-camera').textContent='Use camera instead';$('#capture-look').disabled=false;error.textContent='';$('#try-status').textContent='Photo stays on this device · adjust the outfit';};photo.src=reader.result};reader.readAsDataURL(file)});
+    function drawCover(ctx,source,w,h,mirror=false){const sw=source.videoWidth||source.naturalWidth,sh=source.videoHeight||source.naturalHeight;if(!sw||!sh)return false;const scale=Math.max(w/sw,h/sh),dw=sw*scale,dh=sh*scale,dx=(w-dw)/2,dy=(h-dh)/2;ctx.save();if(mirror){ctx.translate(w,0);ctx.scale(-1,1)}ctx.drawImage(source,dx,dy,dw,dh);ctx.restore();return true}
+    $('#capture-look').addEventListener('click',()=>{const camera=$('#camera'),canvas=$('#capture-canvas'),ctx=canvas.getContext('2d'),rect=camera.getBoundingClientRect(),ratio=Math.min(window.devicePixelRatio||1,2);canvas.width=Math.round(rect.width*ratio);canvas.height=Math.round(rect.height*ratio);ctx.clearRect(0,0,canvas.width,canvas.height);const isPhoto=camera.classList.contains('photo'),source=isPhoto?$('#uploaded-photo'):$('#camera-video');if(!drawCover(ctx,source,canvas.width,canvas.height,!isPhoto&&state.facingMode==='user')){toast('Wait for the camera or photo to finish loading.');return}const overlay=$('#garment-layer');if(!overlay.complete||!overlay.naturalWidth){toast('Wait for the outfit to finish loading.');return}const or=overlay.getBoundingClientRect(),sx=canvas.width/rect.width,sy=canvas.height/rect.height;ctx.drawImage(overlay,(or.left-rect.left)*sx,(or.top-rect.top)*sy,or.width*sx,or.height*sy);const data=canvas.toDataURL('image/jpeg',.9);$('#captured-look').src=data;$('#download-look').href=data;$('#download-look').download='aura-'+(state.activeProduct?.slug||'virtual-look')+'.jpg';$('#capture-preview').classList.add('show');toast('Virtual look captured on this device')});
+    function stopCamera(){++state.cameraRequest;stopPose();state.cameraStream?.getTracks().forEach(t=>t.stop());state.cameraStream=null;const video=$('#camera-video');if(video)video.srcObject=null;const camera=$('#camera');camera?.classList.remove('live','photo','rear','pose-ready');$('#uploaded-photo')?.removeAttribute('src');$('#capture-preview')?.classList.remove('show');if($('#start-camera')){$('#start-camera').disabled=false;$('#start-camera').textContent='Start camera →'}if($('#capture-look'))$('#capture-look').disabled=true;const input=$('#photo-upload');if(input)input.value='';resetFit()}
+    document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLayers()});
+    saveCountOnly();renderCart();const hash=location.hash.slice(1);if(hash&&document.getElementById(hash)?.classList.contains('page'))route(hash);
+  </script>
+</body>
+</html>
